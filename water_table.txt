@@ -1,0 +1,6 @@
+Adelanto, City of	37,636	129	82	0%	0%	n/a	Chart	Map
+Alameda County Water District	344,855	114	78	0%	0%	n/a	Chart	Map
+Alco Water Service	30,198	144	116	0%	0%	n/a	Chart	Map
+Alhambra, City of	85,168	97	72	0%	0%	n/a	Chart	Map
+Amador Water Agency	23,509	232	148	0%	0%	n/a	Chart	Map
+Anaheim, City of	371,317	152	84	0%	0%	n/a	Chart	Map

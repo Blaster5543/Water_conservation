@@ -26,6 +26,12 @@ public:
    void insert(City data);
 
    /**
+    * Checks if city data already exists
+    * @return a 1 if city exists or 0 if it does not exist
+   */
+   bool find_city(std::string);
+
+   /**
     * Gets the hash code from the table
     * @return the statistics of the city
    */

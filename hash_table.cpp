@@ -33,6 +33,21 @@ void HashTable::insert(City data) {
     buckets[h] = new_node;
 }
 
+bool HashTable::find_city(std::string name)
+{
+    int h = hash_code(name);
+    Node* trav = buckets[h];
+
+    //Iterates through the linked list of the spot until it find the city or a null ptr(city does not exist)
+    while (trav != nullptr) {
+        if (buckets[h]->district.city_name == name) {
+            return 1;
+            break;
+        }
+        else {return 0;}
+    }
+}
+
 City HashTable::get_city(const std::string name) {
     City district;
 

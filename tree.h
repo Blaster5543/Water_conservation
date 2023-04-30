@@ -28,12 +28,15 @@ public:
     /**
     * 
     */
-    int get_data() const;  
+    std::string get_data(Node_tree* node, std::string y_n_chain, int pos) const;  
 
     /**
     * Gets the root of the tree.
     */
     Node_tree* get_root() const;
+
+    void print2D(Node_tree* root);
+    void print2DUtil(Node_tree* node, int space);
 
     /**
     * Deletes the entire tree.

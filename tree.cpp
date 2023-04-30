@@ -2,6 +2,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
+#define COUNT 10
 
 //BinaryTree constructor and add_node method from ZyBooks
 
@@ -28,12 +29,57 @@ Node_tree* BinaryTree::add_node(Node_tree* parent, std::string num_code, std::st
    }
 }
 
-int BinaryTree::get_data() const {
-    return 0;
+std::string BinaryTree::get_data(Node_tree* node, std::string y_n_chain, int pos) const {
+    if (node != nullptr) {
+        if (pos == y_n_chain.length()) {
+            return node->num_code;
+        } else if (node->left == nullptr && node->right == nullptr) {
+            return node->num_code;
+        } else {
+            if (y_n_chain[pos] == 'Y') { //Checks if the next character is 0 or 1
+                return get_data(node->left, y_n_chain, pos + 1);
+            } else {
+                return get_data(node->right, y_n_chain, pos + 1);
+            }
+        }
+    } else {
+        return " ";
+    }
 }
 
 Node_tree* BinaryTree::get_root() const {
    return root;
+}
+
+//Will delete later
+void BinaryTree::print2DUtil(Node_tree* root, int space)
+{
+    // Base case
+    if (root == NULL)
+        return;
+ 
+    // Increase distance between levels
+    space += COUNT;
+ 
+    // Process right child first
+    print2DUtil(root->right, space);
+ 
+    // Print current node after space
+    // count
+    std::cout << std::endl;
+    for (int i = COUNT; i < space; i++)
+        std::cout << " ";
+    std::cout << root->num_code << "\n";
+ 
+    // Process left child
+    print2DUtil(root->left, space);
+}
+ 
+// Wrapper over print2DUtil()
+void BinaryTree::print2D(Node_tree* root)
+{
+    // Pass initial space count as 0
+    print2DUtil(root, 0);
 }
 
 void BinaryTree::delete_tree(Node_tree* node) {

@@ -11,7 +11,18 @@
 //Eric Huang
 //Khwaja Sana Sidiqi
 
-int calculation() {
+int calculation(std::string y_n_chain) {
+    std::ifstream gallons_file("questions_gallons_used.txt");
+    std::string line;
+    int gallons = 0;
+    int pos = 0;
+    while (getline(gallons_file, line)) {
+        if (y_n_chain[pos] == 'Y') {
+            gallons += stoi(line);
+        }
+        pos++;
+    }
+
     /*Calculate the user's gallons per day based on their yes or no question or personal information
     if (personal information) {
         Calculate each personal information into a gallons used per day
@@ -20,13 +31,12 @@ int calculation() {
     }
     return the gallons used per day
     */
-   return 0;
+   return gallons;
 }
 
 //Dylan Chiu //Works
 //Last modified: 04/26/23
 void set_up_survey(std::unordered_map<int, std::unordered_set<std::string>>& survey) {
-    std::unordered_map<int, std::unordered_set<std::string>> survey_categories;
     int washroom_category = 1;
     int garden_category = 2;
     int kitchen_category = 3;
@@ -69,76 +79,133 @@ void set_up_survey(std::unordered_map<int, std::unordered_set<std::string>>& sur
         }
     }
 
-    survey_categories[washroom_category] = washroom_tips;
-    survey_categories[garden_category] = garden_tips;
-    survey_categories[kitchen_category] = kitchen_tips;
-    survey_categories[outdoor_category] = outdoor_tips;
-    survey_categories[general_category] = general_tips;
+    survey[washroom_category] = washroom_tips;
+    survey[garden_category] = garden_tips;
+    survey[kitchen_category] = kitchen_tips;
+    survey[outdoor_category] = outdoor_tips;
+    survey[general_category] = general_tips;
 }
 
-//Dylan Chiu //Will remove later/Use for debugging
-void print_map(std::unordered_map<int, std::unordered_set<std::string>>& tips) {
-    std::unordered_map<int, std::unordered_set<std::string>>::iterator it = tips.begin();
-    while (it != tips.end()) {
-        std::unordered_set<std::string>::iterator it_tips = it->second.begin();
-        while (it_tips != it->second.end()) {
-            std::cout << *it_tips << std::endl;
-            it_tips++;
+//Dylan Chiu
+//Needs to be improved to be tailor made. Only prints out the general category.
+void print_tips(std::string num_code, std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
+    int category;
+    std::unordered_set<std::string> tips_to_print;
+    for (int i = 0; i < num_code.length(); i++) {
+        std::string temp = num_code.substr(i, 1);
+        category = stoi(temp);
+        tips_to_print = survey_tips[category];
+        for (auto iter : tips_to_print) {
+            std::cout << iter << std::endl;
         }
-        // iterator incremented to point next item
-        it++;
     }
 }
 
 //Dylan Chiu
-void survey_input() {
+void survey_input(std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
+    const int DAYS_IN_YEAR = 365;
+    const int HOUSE_WATER_PER_YEAR = 109500;
+    const int EFFICIENT_WATER_PER_YEAR = 87600;
+    std::ifstream questions("questions_input.txt");
+    std::string line;
+    int gallons;
+    int total;
+    std::cout << "Please gather the necessary data to input your gallons usage!" << std::endl;
+    std::cout << "Here are the questions! (Input 0 if you do not use/have)" << std::endl;
+    while (getline(questions, line)) {
+        std::cout << line << std::endl;
+        std::cin >> gallons;
+        total += gallons;
+    }
 
+    total *= DAYS_IN_YEAR;
+    std::cout << "This is how many gallons you would use per year! Gallons used: ";
+    std::cout << total << std::endl;
+    if (total > HOUSE_WATER_PER_YEAR) {
+        std::cout << "You're using too much water! Consider buying more water efficient appliances!" << std::endl;
+    } else if (total < HOUSE_WATER_PER_YEAR && total > EFFICIENT_WATER_PER_YEAR) {
+        std::cout << "You're using the average amount. Not bad but you can cut it down more!" << std::endl;
+    } else if (total < EFFICIENT_WATER_PER_YEAR) {
+        std::cout << "You're doing great with water conservation! Keep up the good work!" << std::endl;
+    }
 }
 
-//Dylan Chiu
-void survey_question() {
+//Dylan Chiu //Works
+//Last modified: 04/29/23
+void survey_question(BinaryTree& QNA_tree, std::string& choice, 
+    std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
+    const int QUESTIONS_PER_CATEGORY = 5;
+    const int HOUSE_WATER_PER_YEAR = 109500;
+    const int EFFICIENT_WATER_PER_YEAR = 87600;
     using namespace std;
     string answer;
     string y_n_chain;
-    cout << "Do you constantly take baths? ";
-    cin >> answer;
+    string line;
+    ifstream questions_parse("questions.txt");
+    int gallons;
+
+    //Gets 
+    while (getline(questions_parse, line)) {
+        cout << line << endl;
+        cin >> answer;
+        y_n_chain += answer;
+    }
+
+    //Find way without hardcoding or having a const
+    string y_n_categories;
+    y_n_categories += y_n_chain[0];
+    y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY - 1];
+    y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY * 2 - 1];
+    y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY * 3 - 1];
+    string num_code;
+
+    num_code = QNA_tree.get_data(QNA_tree.get_root(), y_n_categories, 0);
+    cout << "Combining with our survey, we have calculated how much water you used ";
+    cout << "(This is how many gallons used per year assuming you use them everyday)!" << endl;
+    gallons = calculation(y_n_chain);
+    cout << "You use " << gallons << " gallons per year!" << endl;
+    if (gallons > HOUSE_WATER_PER_YEAR) {
+        cout << "You use more water than the average American household, consider cutting it down!" << endl;
+    } else if (gallons <= HOUSE_WATER_PER_YEAR && gallons > EFFICIENT_WATER_PER_YEAR) {
+        cout << "You use the average amount of water. Not bad but you can save more money and water!" << endl;
+    } else if (gallons < EFFICIENT_WATER_PER_YEAR) {
+        cout << "You use less water than the average! Keep up the great work!" << endl;
+    }
+    
+    cout << "Above all, we also will give you some tips on how to save more water!" << endl;
+    print_tips(num_code, survey_tips);
 }
 
 //Dylan Chiu
 //Last modified 04/26/23
-void survey() {
+void survey(BinaryTree& QNA_tree, std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
     std::string choice;
+    std::cout << "By taking the survey, you can get tips that are personalized to help you lower your water bill!" << std::endl;
+    std::cout << "By lowering your water bill, you can help conserve water as well!" << std::endl;
     while (true) {
         std::cout << "Would you like to use your personal information or would you like to answer some yes or no questions? ";
-        std::cout << "(1 for personal information, 2 for questions) ";
+        std::cout << "(1 for personal information, 2 for questions)" << std::endl;
         std::cin >> choice;
         if (choice == "1") {
             std::cout << "Please input the information pertaining to these questions to the gallon." << std::endl;
-            //survey_input();
+            survey_input(survey_tips);
         } else {
             std::cout << "Answer these simple yes or no questions and we will calculate the gallons used by you! ";
             std::cout << "(All must be answered with Y/N)" << std::endl;
-            //survey_question();
+            survey_question(QNA_tree, choice, survey_tips);
         }
 
         std::cout << "Would you like to take the survey again? (Y/N) ";
         std::cin >> choice;
+        if (islower(choice[0])) {
+            choice = toupper(choice[0]);
+        }
         if (choice == "Y") {
             continue;
         } else {
             break;
         }
     }
-    /*Ask the user for personal information or simple yes or no question
-   If (personal information) {
-      Ask them each question pertaining their water consumption
-   } Else {
-      Ask them the available yes or no question
-   }
-   Calculation function
-   Give the user the water conversation tips based on their responses
-   Compare the user to the average user in water consumption
-   Gives response to the user’s water consumption */
 }
 
 void timer() {
@@ -146,9 +213,12 @@ void timer() {
     */
 }
 
+void heap_sort() {
+
+}
+
 //Sana
 //Edit: 4/25/23
-//Edit2: 4/29/23
 void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
     while (true) {
         std::string name;
@@ -165,7 +235,7 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
             Queue cities_to_be_compared;
             std::cout << "What county do you want to be the compared? ";
             std::cin >> name;
-            if ()
+            
             while (name != "0")
             {
                 std::cout << "What counties do you want to compare it with? (Type in the full name, )";
@@ -197,8 +267,12 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
 */
 }
 
-//Dylan Chiu
+//Dylan Chiu //Works
 //Last updated: 04/26/23
+/**
+ * Initializes the QNA tree for the survey function
+ * @param BinaryTree QNA_tree the binary tree to be initialized
+*/
 void set_qna_tree(BinaryTree& QNA_tree) {
     std::ifstream combo("combo_recommend.txt");
     std::string line;
@@ -211,18 +285,23 @@ void set_qna_tree(BinaryTree& QNA_tree) {
         for(int i = 0; i < line.length(); i++) {
             if (line[i] == ' ') {
                 num_code = line.substr(0, i);
-                y_n_chain = line.substr(i, line.length() - i);
+                y_n_chain = line.substr(i + 1, line.length() - i);
             }
         }
 
         QNA_tree.add_node(QNA_tree.get_root(), num_code, y_n_chain, 0);
     }
 
+    //QNA_tree.print2D(QNA_tree.get_root());
+
     combo.close();
 }
 
 //Dylan Chiu //Works
 //Last updated: 04/24/23
+/**
+ * 
+*/
 void get_num_statistics(std::ifstream& file_reader, City& data, std::string& word) {
     std::string population;
     int pop;
@@ -306,15 +385,15 @@ void file_parser(HashTable& dataset) {
 //Dylan Chiu
 //Last updated: 04/24/23
 int main() {
-    std::string user_choice;
-    const int WATER_RESEVOIR_LEVEL = 16000000;
-    const int NBUCKETS = 599;
+    std::string user_choice; //Holds the user's choice
+    const int WATER_RESEVOIR_LEVEL = 16000000; //The current resevoir level
+    const int NBUCKETS = 599; //The hashtable size
     HashTable dataset(NBUCKETS);
     BinaryTree QNA_tree;
-    file_parser(dataset);
-    set_qna_tree(QNA_tree);
-    std::unordered_map <int, std::unordered_set<std::string>> survey_questions;
-    set_up_survey(survey_questions);
+    file_parser(dataset); //inserts the data set into the hash table
+    set_qna_tree(QNA_tree); //initializes the binary decision tree
+    std::unordered_map <int, std::unordered_set<std::string>> survey_tips;
+    set_up_survey(survey_tips);
     //print_map(survey_questions);
 
     std::cout << "Welcome user! This program is designed to help you understand";
@@ -331,7 +410,7 @@ int main() {
         if (user_choice == "1") {
             statistics(dataset, WATER_RESEVOIR_LEVEL);
         } else {
-            survey();
+            survey(QNA_tree, survey_tips);
         }
 
         std::cout << "Would you like to run the program again? (Y/N) ";

@@ -1,0 +1,6 @@
+1. How much water does your faucet take up?
+2. How much water does your toilet flush?
+3. How large is your hose?
+4. How much water does your laundry machine use?
+5. How much water does your dishwasher use?
+6. How much water does your lawn require (Find the width and length then multiply by 0.623)?

@@ -148,6 +148,7 @@ void timer() {
 
 //Sana
 //Edit: 4/25/23
+//Edit2: 4/29/23
 void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
     while (true) {
         std::string name;
@@ -164,7 +165,7 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
             Queue cities_to_be_compared;
             std::cout << "What county do you want to be the compared? ";
             std::cin >> name;
-            
+            if ()
             while (name != "0")
             {
                 std::cout << "What counties do you want to compare it with? (Type in the full name, )";

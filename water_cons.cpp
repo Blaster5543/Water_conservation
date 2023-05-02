@@ -219,27 +219,47 @@ void heap_sort() {
 
 //Sana
 //Edit: 4/25/23
+//Edit2: 4/29/23
+//Edit3: 5/1/23
 void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
     while (true) {
         std::string name;
         std::string choice;
         std::cout << "Do you want to see the statistics of a county or compare? (1 for a single county, 2 for compare) ";
         std::cin >> choice;
-        if (choice == "1") {
-            std::cout << "What county do you want to view? (Type in the full name, ";
+        if (choice == "1") 
+        {
+            std::cout << "What county do you want to view? (Type in the full name) ";
             std::cout << "if it is \"City of\", put City of first then the name) ";
             std::cin >> name;
+            while (!dataset.find_city(name)) 
+            {
+                std::cout << "Could not find city name :(\nPlease try again(Type in the full name): ";
+                std::cin >> name;
+            }
+            
             City temp = dataset.get_city(name);     //temp just holds the data for the city that we will display
             std::cout << temp.city_name << "\nPopulation: " << temp.population << "\nGallons per Capita: " << temp.gallons_per_capita << "\nGallons per Resident: " << temp.gallons_per_resident << "\n"; 
-        } else {
+                                    
+        } 
+        if (choice == "2") 
+        {
+            name = "";
+            bool done = false;
             Queue cities_to_be_compared;
-            std::cout << "What county do you want to be the compared? ";
-            std::cin >> name;
-            
-            while (name != "0")
+            do
             {
-                std::cout << "What counties do you want to compare it with? (Type in the full name, )";
-            } 
+                std::cout << "What counties do you want to compare? (Enter '0' to exit) ";
+                std::cin >> name;
+                
+                if (name == "0") {done = true;}
+                if (dataset.find_city(name)) //if the user input  matches our database name 
+                {
+                    cities_to_be_compared.push(name);
+                }
+                
+            } while (!done);
+
         }
 
         timer();

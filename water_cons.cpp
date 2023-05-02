@@ -7,6 +7,7 @@
 #include "hash_table.h"
 #include "city.h"
 #include "tree.h"
+#include <iomanip>
 //Dylan Chiu
 //Eric Huang
 //Khwaja Sana Sidiqi
@@ -53,9 +54,23 @@ double calculation(double answer, int pos) {
     std::string gallon_amount;
     double gallons = 0;
 
+    //Finds the question that is being asked.
     for (int i = 0; i < pos; i++) {
         getline(input_gallons_file, line);
         getline(gallons_used_file, gallon_amount);
+    }
+
+    //Assumes the answer if the user does not know.
+    if (answer == -1) {
+        if (line.find("long") != std::string::npos) {
+            answer = 8;
+        } else {
+            if (line.find("day") != std::string::npos) {
+                answer = 5;
+            } else {
+                answer = 3;
+            }
+        }
     }
 
     if (line.find("long") != std::string::npos) {
@@ -162,13 +177,17 @@ void survey_input(std::unordered_map <int, std::unordered_set<std::string>>& sur
     const int EFFICIENT_WATER_PER_YEAR = 52012;
     ifstream questions("questions_input.txt");
     string line;
-    double answer;
-    double total;
+    double answer = 0;
+    double total = 0;
+    int pos = 0;
+
     cout << "Here are the questions!" << endl;
     cout << "(Input 0 if you do not use/have, input -1 if you aren't sure (This assume standard or average))" << endl;
     while (getline(questions, line)) {
         cout << line << endl;
         cin >> answer;
+        total += calculation(answer, pos);
+        pos++;
     }
 
     cout << "This is how many gallons you would use per year! Gallons used: ";
@@ -213,12 +232,20 @@ void survey_question(BinaryTree& QNA_tree, std::unordered_map <int, std::unorder
         y_n_chain += answer;
     }
 
-    //Find way without hardcoding or having a const
     string y_n_categories;
-    y_n_categories += y_n_chain[0];
-    y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY - 1];
-    y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY * 2 - 1];
-    y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY * 3 - 1];
+    for (int i = 0; i < y_n_chain.length(); i++) {
+        bool category_answered = false;
+        for (int j = 0; j < QUESTIONS_PER_CATEGORY; j++) {
+            if (y_n_chain[j] == 'Y') {
+                category_answered = true;
+            }
+        }
+        if (category_answered) {
+            y_n_categories += "Y";
+        } else {
+            y_n_categories += "N";
+        }
+    }
 
     num_code = QNA_tree.get_data(QNA_tree.get_root(), y_n_categories, 0);
     gallons = calculation(y_n_chain);
@@ -238,8 +265,8 @@ void survey_question(BinaryTree& QNA_tree, std::unordered_map <int, std::unorder
     cout << endl;
 
     //Outputs the amount of money the user is spending.
-    cout << "This is how much money you're spending on water! ";
-    cout << "$" << gallons * COST_PER_GALLON << endl;
+    cout << "This is how much money you're spending on water per year! ";
+    cout << "$" << fixed << setprecision(2) << gallons * COST_PER_GALLON << endl;
 
     //Prints out the amount of money 
     if (gallons > EFFICIENT_WATER_PER_YEAR) {
@@ -266,7 +293,7 @@ void survey(BinaryTree& QNA_tree, std::unordered_map <int, std::unordered_set<st
         std::cin >> choice;
         if (choice == "1") {
             std::cout << "Please input the information pertaining to these questions to the gallon." << std::endl;
-            //survey_input(survey_tips);
+            survey_input(survey_tips);
         } else {
             std::cout << "Answer these simple yes or no questions and we will calculate the gallons used by you! ";
             std::cout << "(All must be answered with Y/N, if you aren't sure, type in N)" << std::endl;
@@ -308,8 +335,6 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
         std::string choice;
         std::cout << "Do you want to see the statistics of a county or compare? (1 for a single county, 2 for compare) ";
         std::cin >> choice;
-        if (choice == "1") {
-            std::cout << "What county do you want to view? (Type in the full name, ";
         if (choice == "1") 
         {
             std::cout << "What county do you want to view? (Type in the full name) ";
@@ -325,39 +350,38 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
             std::cout << temp.city_name << "\nPopulation: " << temp.population << "\nGallons per Capita: " << temp.gallons_per_capita << "\nGallons per Resident: " << temp.gallons_per_resident << "\n"; 
         } else {
 
-        } 
-        if (choice == "2") 
-        {
-            name = "";
-            bool done = false;
-            Queue cities_to_be_compared;
-            std::cout << "What county do you want to be the compared? ";
-            std::cin >> name;
-
-            while (name != "0")
-            do
+            if (choice == "2") 
             {
-                std::cout << "What counties do you want to compare it with? (Type in the full name, )";
-            } 
-                std::cout << "What counties do you want to compare? (Enter '0' to exit) ";
+                name = "";
+                bool done = false;
+                Queue cities_to_be_compared;
+                std::cout << "What county do you want to be the compared? ";
                 std::cin >> name;
 
-                if (name == "0") {done = true;}
-                if (dataset.find_city(name)) //if the user input  matches our database name 
+                while (name != "0")
+                do
                 {
-                    cities_to_be_compared.push(name);
-                }
+                    std::cout << "What counties do you want to compare it with? (Type in the full name, )";
+                    std::cout << "What counties do you want to compare? (Enter '0' to exit) ";
+                    std::cin >> name;
 
-            } while (!done);
+                    if (name == "0") {done = true;}
+                    if (dataset.find_city(name)) //if the user input  matches our database name 
+                    {
+                        cities_to_be_compared.push(name);
+                    }
 
-        }
+                } while (!done);
 
-        timer();
+            }
 
-        std::cout << "Would you like to use the statistics again? (Y/N) ";
-        std::cin >> choice;
-        if (choice == "N") {
-            break;
+            timer();
+
+            std::cout << "Would you like to use the statistics again? (Y/N) ";
+            std::cin >> choice;
+            if (choice == "N") {
+                break;
+            }
         }
     }
 }

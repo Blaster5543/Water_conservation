@@ -4,3 +4,385 @@ Alco Water Service	30,198	144	116	0%	0%	n/a	Chart	Map
 Alhambra, City of	85,168	97	72	0%	0%	n/a	Chart	Map
 Amador Water Agency	23,509	232	148	0%	0%	n/a	Chart	Map
 Anaheim, City of	371,317	152	84	0%	0%	n/a	Chart	Map
+Anderson, City of	11,147	260	178	0%	0%	n/a	Chart	Map
+Antioch, City of	113,061	120	106	0%	0%	n/a	Chart	Map
+Apple Valley Ranchos Water Company	62,602	161	112	0%	0%	n/a	Chart	Map
+Arcadia, City of	57,639	231	146	0%	0%	n/a	Chart	Map
+Arcata, City of	19,558	88	49	0%	0%	n/a	Chart	Map
+Arroyo Grande, City of	17,963	100	80	0%	0%	n/a	Chart	Map
+Arvin Community Services District	21,947	129	97	0%	0%	n/a	Chart	Map
+Atascadero Mutual Water Company	30,331	190	158	0%	0%	n/a	Chart	Map
+Atwater, City of	31,250	246	185	0%	0%	n/a	Chart	Map
+Azusa, City of	110,044	151	81	0%	0%	n/a	Chart	Map
+Bakersfield, City of	162,570	331	241	0%	0%	n/a	Chart	Map
+Bakman Water Company	17,003	181	127	0%	0%	n/a	Chart	Map
+Banning, City of	31,221	273	156	0%	0%	n/a	Chart	Map
+Beaumont-Cherry Valley Water District	68,302	231	143	0%	0%	n/a	Chart	Map
+Bella Vista Water District	19,150	374	158	0%	0%	n/a	Chart	Map
+Bellflower-Somerset Mutual Water Company	46,300	97	81	0%	0%	n/a	Chart	Map
+Benicia, City of	28,086	144	78	0%	0%	n/a	Chart	Map
+Beverly Hills, City of	43,910	192	134	0%	0%	n/a	Chart	Map
+Big Bear City Community Services District	12,738	73	72	0%	0%	n/a	Chart	Map
+Brawley, City of	26,928	236	152	0%	0%	n/a	Chart	Map
+Brea, City of	42,568	228	116	0%	0%	n/a	Chart	Map
+Brentwood, City of	64,342	194	147	0%	0%	n/a	Chart	Map
+Buena Park, City of	81,998	156	92	0%	0%	n/a	Chart	Map
+Burbank, City of	105,451	123	99	0%	0%	n/a	Chart	Map
+Burlingame, City of	32,407	111	80	0%	0%	n/a	Chart	Map
+Calaveras County Water District	23,715	250	238	0%	0%	n/a	Chart	Map
+Calexico, City of	38,000	146	122	0%	0%	n/a	Chart	Map
+California Water Service Company Antelope Valley	3,338	197	176	0%	0%	n/a	Chart	Map
+California Water Service Company Bakersfield	289,013	215	138	0%	0%	n/a	Chart	Map
+California Water Service Company Bear Gulch	61,123	217	192	0%	0%	n/a	Chart	Map
+California Water Service Company Chico District	112,692	209	149	0%	0%	n/a	Chart	Map
+California Water Service Company Dixon, City of	10,625	117	107	0%	0%	n/a	Chart	Map
+California Water Service Company Dominguez	143,440	165	68	0%	0%	n/a	Chart	Map
+California Water Service Company East Los Angeles	151,678	89	47	0%	0%	n/a	Chart	Map
+California Water Service Company Hermosa/Redondo	96,683	96	68	0%	0%	n/a	Chart	Map
+California Water Service Company Kern River Valley	5,591	158	132	0%	0%	n/a	Chart	Map
+California Water Service Company King City	16,088	105	50	0%	0%	n/a	Chart	Map
+California Water Service Company Livermore	60,248	157	115	0%	0%	n/a	Chart	Map
+California Water Service Company Los Altos/Suburban	70,182	166	124	0%	0%	n/a	Chart	Map
+California Water Service Company Marysville	12,243	150	98	0%	0%	n/a	Chart	Map
+California Water Service Company Mid Peninsula	137,667	94	68	0%	0%	n/a	Chart	Map
+California Water Service Company Oroville	11,063	297	74	0%	0%	n/a	Chart	Map
+California Water Service Company Palos Verdes	70,856	212	167	0%	0%	n/a	Chart	Map
+California Water Service Company Redwood Valley	3,297	111	101	0%	0%	n/a	Chart	Map
+California Water Service Company Salinas District	123,646	131	92	0%	0%	n/a	Chart	Map
+California Water Service Company Selma	26,423	158	122	0%	0%	n/a	Chart	Map
+California Water Service Company South San Francisco	64,123	103	39	0%	0%	n/a	Chart	Map
+California Water Service Company Stockton	175,343	137	82	0%	0%	n/a	Chart	Map
+California Water Service Company Visalia	150,742	227	161	0%	0%	n/a	Chart	Map
+California Water Service Company Westlake	19,515	269	195	0%	0%	n/a	Chart	Map
+California Water Service Company Willows	7,235	157	115	0%	0%	n/a	Chart	Map
+California-American Water Company Los Angeles District	101,777	168	129	0%	0%	n/a	Chart	Map
+California-American Water Company Monterey District	91,884	98	63	0%	0%	n/a	Chart	Map
+California-American Water Company Sacramento District	203,851	146	106	0%	0%	n/a	Chart	Map
+California-American Water Company San Diego District	94,043	104	64	0%	0%	n/a	Chart	Map
+California-American Water Ventura District	63,423	184	120	0%	0%	n/a	Chart	Map
+Camarillo, City of	49,480	134	82	0%	0%	n/a	Chart	Map
+Camrosa Water District	32,700	180	120	0%	0%	n/a	Chart	Map
+Carlsbad Municipal Water District	92,865	155	101	0%	0%	n/a	Chart	Map
+Carmichael Water District	41,193	242	198	0%	0%	n/a	Chart	Map
+Carpinteria Valley Water District	15,996	120	91	0%	0%	n/a	Chart	Map
+Casitas Municipal Water District	17,806	254	167	0%	0%	n/a	Chart	Map
+Ceres, City of	49,038	133	97	0%	0%	n/a	Chart	Map
+Cerritos, City of	50,145	142	124	0%	0%	n/a	Chart	Map
+Chino Hills, City of	83,159	152	111	0%	0%	n/a	Chart	Map
+Chino, City of	84,560	183	98	0%	0%	n/a	Chart	Map
+Chowchilla, City of	13,375	244	173	0%	0%	n/a	Chart	Map
+Citrus Heights Water District	69,964	191	162	0%	0%	n/a	Chart	Map
+City of Big Bear Lake, Dept of Water & Power	28,720	67	51	0%	0%	n/a	Chart	Map
+City of Newman Water Department	12,244	222	141	0%	0%	n/a	Chart	Map
+Cloverdale, City of	9,149	119	79	0%	0%	n/a	Chart	Map
+Clovis, City of	127,553	239	207	0%	0%	n/a	Chart	Map
+Coachella Valley Water District	270,000	346	242	0%	0%	n/a	Chart	Map
+Coachella, City of	45,635	149	115	0%	0%	n/a	Chart	Map
+Coalinga, City of	16,748	232	123	0%	0%	n/a	Chart	Map
+Coastside County Water District	18,839	90	54	0%	0%	n/a	Chart	Map
+Colton, City of	54,741	167	84	0%	0%	n/a	Chart	Map
+Compton, City of	78,426	85	51	0%	0%	n/a	Chart	Map
+Contra Costa Water District	197,996	163	132	0%	0%	n/a	Chart	Map
+Corcoran, City of	13,593	333	248	0%	0%	n/a	Chart	Map
+Corona, City of	167,409	192	140	0%	0%	n/a	Chart	Map
+Covina, City of	33,300	145	107	0%	0%	n/a	Chart	Map
+Crescent City, City of	19,220	115	50	0%	0%	n/a	Chart	Map
+Crescenta Valley Water District	32,665	106	92	0%	0%	n/a	Chart	Map
+Crestline Village Water District	10,030	70	62	0%	0%	n/a	Chart	Map
+Cucamonga Valley Water District	202,000	208	139	0%	0%	n/a	Chart	Map
+Daly City, City of	107,488	54	43	0%	0%	n/a	Chart	Map
+Davis, City of	71,698	152	104	0%	0%	n/a	Chart	Map
+Del Oro Water Company	8,843	108	87	0%	0%	n/a	Chart	Map
+Delano, City of	50,903	171	103	0%	0%	n/a	Chart	Map
+Desert Water Agency	73,977	429	349	0%	0%	n/a	Chart	Map
+Diablo Water District	43,357	151	123	0%	0%	n/a	Chart	Map
+Dinuba, City of	26,731	202	152	0%	0%	n/a	Chart	Map
+Downey, City of	111,269	123	92	0%	0%	n/a	Chart	Map
+Dublin San Ramon Services District	95,072	108	75	0%	0%	n/a	Chart	Map
+East Bay Municipal Utilities District	1,430,000	122	76	0%	0%	n/a	Chart	Map
+East Niles Community Service District	32,000	299	231	0%	0%	n/a	Chart	Map
+East Orange County Water District	3,222	273	265	0%	0%	n/a	Chart	Map
+East Palo Alto, City of	29,519	53	43	0%	0%	n/a	Chart	Map
+East Valley Water District	104,000	184	136	0%	0%	n/a	Chart	Map
+Eastern Municipal Water District	640,423	141	110	0%	0%	n/a	Chart	Map
+El Centro, City of	44,508	169	122	0%	0%	n/a	Chart	Map
+El Dorado Irrigation District	131,033	307	209	0%	0%	n/a	Chart	Map
+El Monte, City of	22,968	77	47	0%	0%	n/a	Chart	Map
+El Segundo, City of	17,272	330	50	0%	0%	n/a	Chart	Map
+El Toro Water District	47,911	219	99	0%	0%	n/a	Chart	Map
+Elk Grove Water Service	47,006	168	129	0%	0%	n/a	Chart	Map
+Elsinore Valley Municipal Water District	161,565	151	108	0%	0%	n/a	Chart	Map
+Escondido, City of	137,941	140	80	0%	0%	n/a	Chart	Map
+Estero Municipal Improvement District	36,556	111	60	0%	0%	n/a	Chart	Map
+Eureka, City of	26,699	90	58	0%	0%	n/a	Chart	Map
+Exeter, City of	11,169	225	162	0%	0%	n/a	Chart	Map
+Fair Oaks Water District	36,226	325	244	0%	0%	n/a	Chart	Map
+Fairfield, City of	108,691	199	127	0%	0%	n/a	Chart	Map
+Fallbrook Public Utility District	35,237	159	92	0%	0%	n/a	Chart	Map
+Fillmore, City of	15,222	146	121	0%	0%	n/a	Chart	Map
+Folsom, City of	71,494	323	194	0%	0%	n/a	Chart	Map
+Fortuna, City of	12,135	100	89	0%	0%	n/a	Chart	Map
+Fountain Valley, City of	56,747	147	83	0%	0%	n/a	Chart	Map
+Fresno, City of	554,145	245	148	0%	0%	n/a	Chart	Map
+Fruitridge Vista Water Company	15,712	198	79	0%	0%	n/a	Chart	Map
+Fullerton, City of	143,617	166	117	0%	0%	n/a	Chart	Map
+Galt, City of	26,536	195	158	0%	0%	n/a	Chart	Map
+Garden Grove, City of	171,949	123	38	0%	0%	n/a	Chart	Map
+Georgetown Divide Public Utilities District	9,203	205	174	0%	0%	n/a	Chart	Map
+Gilroy, City of	58,456	139	90	0%	0%	n/a	Chart	Map
+Glendale, City of	190,616	106	78	0%	0%	n/a	Chart	Map
+Glendora, City of	52,558	186	145	0%	0%	n/a	Chart	Map
+Golden State Water Company Artesia	50,260	82	62	0%	0%	n/a	Chart	Map
+Golden State Water Company Barstow	32,869	183	99	0%	0%	n/a	Chart	Map
+Golden State Water Company Bay Point	23,693	75	60	0%	0%	n/a	Chart	Map
+Golden State Water Company Bell-Bell Gardens	54,548	76	58	0%	0%	n/a	Chart	Map
+Golden State Water Company Claremont	39,325	215	141	0%	0%	n/a	Chart	Map
+Golden State Water Company Cordova	46,834	305	163	0%	0%	n/a	Chart	Map
+Golden State Water Company Culver City	37,894	115	63	0%	0%	n/a	Chart	Map
+Golden State Water Company Florence Graham	62,941	66	50	0%	0%	n/a	Chart	Map
+Golden State Water Company Norwalk	43,143	90	66	0%	0%	n/a	Chart	Map
+Golden State Water Company Orcutt	33,733	173	140	0%	0%	n/a	Chart	Map
+Golden State Water Company Placentia	49,686	135	90	0%	0%	n/a	Chart	Map
+Golden State Water Company S Arcadia	26,526	103	89	0%	0%	n/a	Chart	Map
+Golden State Water Company S San Gabriel	25,808	81	63	0%	0%	n/a	Chart	Map
+Golden State Water Company San Dimas	56,336	183	110	0%	0%	n/a	Chart	Map
+Golden State Water Company Simi Valley	44,950	108	81	0%	0%	n/a	Chart	Map
+Golden State Water Company Southwest	275,051	86	61	0%	0%	n/a	Chart	Map
+Golden State Water Company West Orange	113,125	117	70	0%	0%	n/a	Chart	Map
+Goleta Water District	84,462	153	62	0%	0%	n/a	Chart	Map
+Great Oaks Water Company Incorporated	108,903	89	69	0%	0%	n/a	Chart	Map
+Greenfield County Water District	11,757	253	183	0%	0%	n/a	Chart	Map
+Greenfield, City of	18,927	102	78	0%	0%	n/a	Chart	Map
+Groveland Community Services District	3,400	114	107	0%	0%	n/a	Chart	Map
+Hanford, City of	59,338	217	180	0%	0%	n/a	Chart	Map
+Hawthorne, City of	44,728	79	61	0%	0%	n/a	Chart	Map
+Hayward, City of	163,635	107	58	0%	0%	n/a	Chart	Map
+Healdsburg, City of	11,030	143	100	0%	0%	n/a	Chart	Map
+Hemet, City of	33,828	118	84	0%	0%	n/a	Chart	Map
+Hesperia Water District, City of	99,818	143	141	0%	0%	n/a	Chart	Map
+Hi-Desert Water District	26,032	109	77	0%	0%	n/a	Chart	Map
+Hillsborough Town of	11,397	248	233	0%	0%	n/a	Chart	Map
+Hollister, City of	23,583	144	96	0%	0%	n/a	Chart	Map
+Humboldt Bay Municipal Water District	602	297	76	0%	0%	n/a	Chart	Map
+Humboldt Community Service District	19,551	89	73	0%	0%	n/a	Chart	Map
+Huntington Beach, City of	201,281	123	86	0%	0%	n/a	Chart	Map
+Huntington Park, City of	54,883	71	56	0%	0%	n/a	Chart	Map
+Indian Wells Valley Water District	33,476	222	183	0%	0%	n/a	Chart	Map
+Indio, City of	90,804	217	158	0%	0%	n/a	Chart	Map
+Inglewood, City of	82,041	94	75	0%	0%	n/a	Chart	Map
+Irvine Ranch Water District	466,796	118	69	0%	0%	n/a	Chart	Map
+Joshua Basin Water District	9,665	130	71	0%	0%	n/a	Chart	Map
+Jurupa Community Service District	140,147	196	145	0%	0%	n/a	Chart	Map
+Kerman, City of	16,639	204	162	0%	0%	n/a	Chart	Map
+Kingsburg, City of	12,415	299	259	0%	0%	n/a	Chart	Map
+La Habra, City of Public Works	63,118	130	95	0%	0%	n/a	Chart	Map
+La Palma, City of	15,896	107	75	0%	0%	n/a	Chart	Map
+La Verne, City of	32,228	208	118	0%	0%	n/a	Chart	Map
+Laguna Beach County Water District	19,117	151	125	0%	0%	n/a	Chart	Map
+Lake Arrowhead Community Services District	19,096	81	74	0%	0%	n/a	Chart	Map
+Lake Hemet Municipal Water District	54,320	159	145	0%	0%	n/a	Chart	Map
+Lakeside Water District	35,500	103	93	0%	0%	n/a	Chart	Map
+Lakewood, City of	61,769	108	86	0%	0%	n/a	Chart	Map
+Lamont Public Utility District	20,009	186	119	0%	0%	n/a	Chart	Map
+Las Virgenes Municipal Water District	75,384	195	154	0%	0%	n/a	Chart	Map
+Lathrop, City of	31,331	186	97	0%	0%	n/a	Chart	Map
+Lee Lake Water District	22,485	151	116	0%	0%	n/a	Chart	Map
+Lemoore, City of	27,235	308	264	0%	0%	n/a	Chart	Map
+Lincoln Avenue Water Company	16,126	112	98	0%	0%	n/a	Chart	Map
+Lincoln, City of	51,252	247	185	0%	0%	n/a	Chart	Map
+Linda County Water District	20,943	181	141	0%	0%	n/a	Chart	Map
+Livermore, City of	38,892	174	97	0%	0%	n/a	Chart	Map
+Livingston, City of	15,052	377	129	0%	0%	n/a	Chart	Map
+Lodi, City of Public Works Department	68,272	222	144	0%	0%	n/a	Chart	Map
+Loma Linda, City of	24,791	220	143	0%	0%	n/a	Chart	Map
+Lomita, City of	20,256	86	82	0%	0%	n/a	Chart	Map
+Lompoc, City of	40,415	62	45	0%	0%	n/a	Chart	Map
+Long Beach, City of	460,682	95	67	0%	0%	n/a	Chart	Map
+Los Angeles County Public Works Waterworks District 29	22,860	332	232	0%	0%	n/a	Chart	Map
+Los Angeles County Public Works Waterworks District 40	215,955	191	137	0%	0%	n/a	Chart	Map
+Los Angeles Department of Water and Power	3,823,951	116	76	0%	0%	n/a	Chart	Map
+Los Banos, City of	46,639	202	131	0%	0%	n/a	Chart	Map
+Lynwood, City of	66,967	64	36	0%	0%	n/a	Chart	Map
+Madera, City of	66,419	154	108	0%	0%	n/a	Chart	Map
+Mammoth Community Water District	16,739	125	75	0%	0%	n/a	Chart	Map
+Manhattan Beach, City of	35,996	113	79	0%	0%	n/a	Chart	Map
+Manteca, City of	89,025	179	155	0%	0%	n/a	Chart	Map
+Marin Municipal Water District	191,082	120	85	0%	0%	n/a	Chart	Map
+Marina Coast Water District	36,043	100	60	0%	0%	n/a	Chart	Map
+Martinez, City of	30,085	171	118	0%	0%	n/a	Chart	Map
+McKinleyville Community Service District	16,900	89	63	0%	0%	n/a	Chart	Map
+Menlo Park, City of	20,319	142	60	0%	0%	n/a	Chart	Map
+Merced, City of	93,058	248	166	0%	0%	n/a	Chart	Map
+Mesa Water District	110,000	100	67	0%	0%	n/a	Chart	Map
+Mid-Peninsula Water District	27,560	94	68	0%	0%	n/a	Chart	Map
+Millbrae, City of	21,532	76	53	0%	0%	n/a	Chart	Map
+Milpitas, City of	77,961	111	50	0%	0%	n/a	Chart	Map
+Mission Springs Water District	44,108	176	115	0%	0%	n/a	Chart	Map
+Modesto, City of	236,438	243	142	0%	0%	n/a	Chart	Map
+Monte Vista Water District	56,839	140	100	0%	0%	n/a	Chart	Map
+Montebello Land and Water Company	26,554	104	86	0%	0%	n/a	Chart	Map
+Montecito Water District	11,865	392	278	0%	0%	n/a	Chart	Map
+Monterey Park, City of	62,183	105	74	0%	0%	n/a	Chart	Map
+Morgan Hill, City of	46,451	162	101	0%	0%	n/a	Chart	Map
+Moulton Niguel Water District	170,236	139	101	0%	0%	n/a	Chart	Map
+Mountain House Community Services District	27,926	225	124	0%	0%	n/a	Chart	Map
+Mountain View, City of	81,764	117	64	0%	0%	n/a	Chart	Map
+Myoma Dunes Mutual Water Company	8,948	360	315	0%	0%	n/a	Chart	Map
+Napa, City of	87,067	143	86	0%	0%	n/a	Chart	Map
+Nevada Irrigation District	44,761	238	196	0%	0%	n/a	Chart	Map
+Newport Beach, City of	68,572	205	119	0%	0%	n/a	Chart	Map
+Nipomo Community Services District	13,773	138	115	0%	0%	n/a	Chart	Map
+North Coast County Water District	38,640	54	41	0%	0%	n/a	Chart	Map
+North Marin Water District	61,693	110	86	0%	0%	n/a	Chart	Map
+North Tahoe Public Utility District	7,500	182	154	0%	0%	n/a	Chart	Map
+Oceanside, City of	178,021	140	83	0%	0%	n/a	Chart	Map
+Oildale Mutual Water Company	39,756	263	198	0%	0%	n/a	Chart	Map
+Olivehurst Public Utility District	27,019	178	159	0%	0%	n/a	Chart	Map
+Olivenhain Municipal Water District	87,084	207	134	0%	0%	n/a	Chart	Map
+Ontario, City of	182,871	178	100	0%	0%	n/a	Chart	Map
+Orange Vale Water Company	16,815	274	219	0%	0%	n/a	Chart	Map
+Orange, City of	140,094	113	68	0%	0%	n/a	Chart	Map
+Orchard Dale Water District	25,000	72	56	0%	0%	n/a	Chart	Map
+Otay Water District	227,957	130	83	0%	0%	n/a	Chart	Map
+Oxnard, City of	199,852	118	54	0%	0%	n/a	Chart	Map
+Padre Dam Municipal Water District	92,045	110	102	0%	0%	n/a	Chart	Map
+Palmdale Water District	118,291	170	136	0%	0%	n/a	Chart	Map
+Palo Alto, City of	67,973	157	103	0%	0%	n/a	Chart	Map
+Paradise Irrigation District	8,000	602	58	0%	0%	n/a	Chart	Map
+Paramount, City of	55,200	88	64	0%	0%	n/a	Chart	Map
+Park Water Company	120,937	75	50	0%	0%	n/a	Chart	Map
+Pasadena, City of	170,950	156	93	0%	0%	n/a	Chart	Map
+Paso Robles, City of	31,221	216	113	0%	0%	n/a	Chart	Map
+Patterson, City of	24,370	169	108	0%	0%	n/a	Chart	Map
+Perris, City of	9,000	235	129	0%	0%	n/a	Chart	Map
+Petaluma, City of	61,304	97	66	0%	0%	n/a	Chart	Map
+Phelan Pinon Hills Community Services District	23,585	123	92	0%	0%	n/a	Chart	Map
+Pico Rivera, City of	40,605	102	72	0%	0%	n/a	Chart	Map
+Pico Water District	22,051	116	76	0%	0%	n/a	Chart	Map
+Pinedale County Water District	16,735	161	152	0%	0%	n/a	Chart	Map
+Pittsburg, City of	75,156	118	79	0%	0%	n/a	Chart	Map
+Placer County Water Agency	112,215	313	200	0%	0%	n/a	Chart	Map
+Pleasanton, City of	84,317	173	101	0%	0%	n/a	Chart	Map
+Pomona, City of	151,713	113	81	0%	0%	n/a	Chart	Map
+Port Hueneme, City of	21,555	79	57	0%	0%	n/a	Chart	Map
+Porterville, City of	65,702	199	138	0%	0%	n/a	Chart	Map
+Poway, City of	49,062	199	135	0%	0%	n/a	Chart	Map
+Quartz Hill Water District	20,352	231	226	0%	0%	n/a	Chart	Map
+Rainbow Municipal Water District	23,536	295	71	0%	0%	n/a	Chart	Map
+Ramona Municipal Water District	35,135	141	96	0%	0%	n/a	Chart	Map
+Rancho California Water District	152,449	273	248	0%	0%	n/a	Chart	Map
+Red Bluff, City of	14,076	274	159	0%	0%	n/a	Chart	Map
+Redding, City of	88,235	304	219	0%	0%	n/a	Chart	Map
+Redlands, City of	78,052	311	229	0%	0%	n/a	Chart	Map
+Redwood City, City of	90,928	93	66	0%	0%	n/a	Chart	Map
+Reedley, City of	25,917	231	87	0%	0%	n/a	Chart	Map
+Rialto, City of	54,453	174	129	0%	0%	n/a	Chart	Map
+Rincon Del Diablo Municipal Water District	32,019	158	118	0%	0%	n/a	Chart	Map
+Rio Linda - Elverta Community Water District	15,345	180	151	0%	0%	n/a	Chart	Map
+Rio Vista, City of	10,472	236	165	0%	0%	n/a	Chart	Map
+Ripon, City of	16,613	268	211	0%	0%	n/a	Chart	Map
+Riverbank, City of	24,623	172	155	0%	0%	n/a	Chart	Map
+Riverside Highland Water Company	21,370	136	108	0%	0%	n/a	Chart	Map
+Riverside, City of	300,368	220	127	0%	0%	n/a	Chart	Map
+Rohnert Park, City of	42,484	97	63	0%	0%	n/a	Chart	Map
+Rosamond Community Service District	17,700	161	140	0%	0%	n/a	Chart	Map
+Roseville, City of	143,113	239	152	0%	0%	n/a	Chart	Map
+Rowland Water District	59,283	148	75	0%	0%	n/a	Chart	Map
+Rubidoux Community Service District	36,827	135	98	0%	0%	n/a	Chart	Map
+Rubio Canyon Land and Water Association	9,600	198	182	0%	0%	n/a	Chart	Map
+Sacramento County Water Agency	202,259	227	157	0%	0%	n/a	Chart	Map
+Sacramento Suburban Water District	194,444	184	116	0%	0%	n/a	Chart	Map
+Sacramento, City of	518,037	182	111	0%	0%	n/a	Chart	Map
+San Bernardino County Service Area 64	14,793	201	175	0%	0%	n/a	Chart	Map
+San Bernardino County Service Area 70	12,698	144	136	0%	0%	n/a	Chart	Map
+San Bernardino, City of	213,452	182	115	0%	0%	n/a	Chart	Map
+San Bruno, City of	44,936	49	36	0%	0%	n/a	Chart	Map
+San Buenaventura, City of	113,478	116	74	0%	0%	n/a	Chart	Map
+San Clemente, City of	51,065	143	101	0%	0%	n/a	Chart	Map
+San Diego, City of	1,411,034	118	63	0%	0%	n/a	Chart	Map
+San Dieguito Water District	39,823	137	113	0%	0%	n/a	Chart	Map
+San Fernando, City of	24,322	102	76	0%	0%	n/a	Chart	Map
+San Francisco Public Utilities Commission	899,732	72	44	0%	0%	n/a	Chart	Map
+San Gabriel County Water District	45,000	102	77	0%	0%	n/a	Chart	Map
+San Gabriel Valley Fontana Water Company	237,800	165	94	0%	0%	n/a	Chart	Map
+San Gabriel Valley Water Company	254,000	111	62	0%	0%	n/a	Chart	Map
+San Jose Water Company	1,042,326	103	57	0%	0%	n/a	Chart	Map
+San Jose, City of	139,734	121	69	0%	0%	n/a	Chart	Map
+San Juan Capistrano, City of	38,897	197	111	0%	0%	n/a	Chart	Map
+San Juan Water District	28,926	531	458	0%	0%	n/a	Chart	Map
+San Lorenzo Valley Water District	26,190	69	60	0%	0%	n/a	Chart	Map
+San Luis Obispo, City of	47,653	98	57	0%	0%	n/a	Chart	Map
+Santa Ana, City of	332,005	94	63	0%	0%	n/a	Chart	Map
+Santa Barbara, City of	98,420	107	71	0%	0%	n/a	Chart	Map
+Santa Clara, City of	130,746	139	86	0%	0%	n/a	Chart	Map
+Santa Clarita Valley Water Agency	295,639	211	123	0%	0%	n/a	Chart	Map
+Santa Cruz, City of	87,957	86	46	0%	0%	n/a	Chart	Map
+Santa Fe Irrigation District	19,839	530	445	0%	0%	n/a	Chart	Map
+Santa Fe Springs, City of	18,199	291	78	0%	0%	n/a	Chart	Map
+Santa Margarita Water District	164,492	149	110	0%	0%	n/a	Chart	Map
+Santa Maria, City of	109,910	102	64	0%	0%	n/a	Chart	Map
+Santa Monica, City of	92,408	115	79	0%	0%	n/a	Chart	Map
+Santa Paula, City of	29,558	142	105	0%	0%	n/a	Chart	Map
+Santa Rosa, City of	175,755	98	70	0%	0%	n/a	Chart	Map
+Scotts Valley Water District	10,789	97	64	0%	0%	n/a	Chart	Map
+Seal Beach, City of	25,561	115	84	0%	0%	n/a	Chart	Map
+Shafter, City of	20,500	259	147	0%	0%	n/a	Chart	Map
+Shasta Lake, City of	10,657	194	142	0%	0%	n/a	Chart	Map
+Sierra Madre, City of	11,100	198	187	0%	0%	n/a	Chart	Map
+Signal Hill City of	11,712	148	73	0%	0%	n/a	Chart	Map
+Soledad, City of	17,309	137	91	0%	0%	n/a	Chart	Map
+Sonoma, City of	11,725	173	126	0%	0%	n/a	Chart	Map
+Soquel Creek Water District	40,659	74	52	0%	0%	n/a	Chart	Map
+South Coast Water District	34,635	155	110	0%	0%	n/a	Chart	Map
+South Feather Water and Power Agency	16,770	384	342	0%	0%	n/a	Chart	Map
+South Gate, City of	76,443	105	64	0%	0%	n/a	Chart	Map
+South Tahoe Public Utilities District	33,120	175	81	0%	0%	n/a	Chart	Map
+Stockton, City of	184,402	185	109	0%	0%	n/a	Chart	Map
+Suburban Water Systems San Jose Hills	175,529	129	93	0%	0%	n/a	Chart	Map
+Suburban Water Systems Whittier/La Mirada	122,838	158	102	0%	0%	n/a	Chart	Map
+Sunny Slope Water Company	25,252	126	113	0%	0%	n/a	Chart	Map
+Sunnyslope County Water District	24,970	110	98	0%	0%	n/a	Chart	Map
+Sunnyvale, City of	156,234	121	74	0%	0%	n/a	Chart	Map
+Susanville, City of	7,911	451	331	0%	0%	n/a	Chart	Map
+Sweetwater Authority	189,371	88	59	0%	0%	n/a	Chart	Map
+Sweetwater Springs Water District	7,703	81	40	0%	0%	n/a	Chart	Map
+Tahoe City Public Utilities District	10,217	165	132	0%	0%	n/a	Chart	Map
+Tehachapi, City of	9,094	245	157	0%	0%	n/a	Chart	Map
+Thermalito Water and Sewer District	10,355	229	180	0%	0%	n/a	Chart	Map
+Thousand Oaks, City of	53,157	135	108	0%	0%	n/a	Chart	Map
+Trabuco Canyon Water District	12,921	185	142	0%	0%	n/a	Chart	Map
+Tracy, City of	98,601	238	155	0%	0%	n/a	Chart	Map
+Triunfo Sanitation District / Oak Park Water Service	13,898	104	93	0%	0%	n/a	Chart	Map
+Truckee-Donner Public Utilities District	34,385	144	113	0%	0%	n/a	Chart	Map
+Tulare, City of	69,162	254	153	0%	0%	n/a	Chart	Map
+Tuolumne Utilities District	34,278	142	84	0%	0%	n/a	Chart	Map
+Turlock, City of	74,820	265	141	0%	0%	n/a	Chart	Map
+Tustin, City of	66,600	158	128	0%	0%	n/a	Chart	Map
+Twentynine Palms Water District	18,795	125	107	0%	0%	n/a	Chart	Map
+Upland, City of	78,383	193	131	0%	0%	n/a	Chart	Map
+Vacaville, City of	98,742	187	141	0%	0%	n/a	Chart	Map
+Vallecitos Water District	110,997	138	87	0%	0%	n/a	Chart	Map
+Vallejo, City of	127,686	118	69	0%	0%	n/a	Chart	Map
+Valley Center Municipal Water District	29,708	261	77	0%	0%	n/a	Chart	Map
+Valley County Water District	68,714	90	57	0%	0%	n/a	Chart	Map
+Valley of the Moon Water District	23,077	100	87	0%	0%	n/a	Chart	Map
+Valley Water Company	10,070	323	282	0%	0%	n/a	Chart	Map
+Vaughn Water Company	33,995	437	419	0%	0%	n/a	Chart	Map
+Ventura County Waterworks District No 1	35,975	153	126	0%	0%	n/a	Chart	Map
+Ventura County Waterworks District No. 8	94,738	149	102	0%	0%	n/a	Chart	Map
+Vernon, City of	112	51,297	153	0%	0%	n/a	Chart	Map
+Victorville Water District	130,839	168	114	0%	0%	n/a	Chart	Map
+Vista Irrigation District	132,838	134	86	0%	0%	n/a	Chart	Map
+Walnut Valley Water District	100,461	153	127	0%	0%	n/a	Chart	Map
+Watsonville, City of	65,231	94	63	0%	0%	n/a	Chart	Map
+West Kern Water District	22,113	697	195	0%	0%	n/a	Chart	Map
+West Valley Water District	97,893	210	137	0%	0%	n/a	Chart	Map
+Westborough Water District	13,486	60	45	0%	0%	n/a	Chart	Map
+Western Municipal Water District of Riverside	101,585	253	152	0%	0%	n/a	Chart	Map
+Westminster, City of	96,179	110	77	0%	0%	n/a	Chart	Map
+Whittier, City of	49,954	136	98	0%	0%	n/a	Chart	Map
+Windsor, Town of	28,397	106	69	0%	0%	n/a	Chart	Map
+Woodland, City of	60,978	165	110	0%	0%	n/a	Chart	Map
+Yorba Linda Water District	80,540	247	194	0%	0%	n/a	Chart	Map
+Yreka, City of	7,746	343	86	0%	0%	n/a	Chart	Map
+Yuba City, City of	71,922	193	127	0%	0%	n/a	Chart	Map

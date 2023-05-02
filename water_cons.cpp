@@ -321,9 +321,59 @@ void timer() {
     */
 }
 
-void heap_sort() {
 
+/**
+   Swaps two integers.
+   @param x the first integer to swap
+   @param y the second integer to swap
+*/
+
+/*
+void swap(int& x, int& y)
+{  
+   int temp = x;
+   x = y;
+   y = temp;
+}*/
+
+/**
+   Partitions a portion of an array.
+   @param a the array to partition
+   @param from the first index of the portion to be partitioned
+   @param to the last index of the portion to be partitioned
+   @return the last index of the first partition
+*/
+
+/*
+int partition(City a[], int from, int to)
+{
+   int pivot = a[from].gallons_per_capita;
+   int i = from - 1;
+   int j = to + 1;
+   while (i < j)
+   {
+      i++; while (a[i] < pivot) { i++; }
+      j--; while (a[j] > pivot) { j--; }
+      if (i < j) { swap(a[i], a[j]); }
+   }
+   return j;
+} */
+
+/**
+   Sorts a portion of an array, using quick sort.
+   @param a the array to sort
+   @param from the first index of the portion to be sorted
+   @param to the last index of the portion to be sorted
+*/
+/*
+void quicksort(City a[], int from, int to)
+{
+   if (from >= to) { return; }
+   int p = partition(a, from, to);
+   quicksort(a, from, p);
+   quicksort(a, p + 1, to);
 }
+*/
 
 //Sana
 //Edit: 4/25/23
@@ -467,33 +517,17 @@ void file_parser(HashTable& dataset) {
         std::string name;
         //Gets the name of the district
         while (!isdigit(word[0])) {
-            //If a comma is found, takes the word and puts it into a temp. 
-            //Places the "City of" in the front of the city name.
-            if (word.find(",") != std::string::npos) {
-                name = word;
-                std::string temp = name;
-                name = "City of ";
-                name += temp;
-                file_reader >> word;
-                file_reader >> word;
-                file_reader >> word;
-            //Puts the name together normally.
-            } else {
-                name += word;
-                name += " ";
-                file_reader >> word;
-            }
+            name += word;
+            name += " ";
+            file_reader >> word;
         }
-
-        //concatenates any spaces or commas
-        name = name.substr(0, name.length() - 1);
+        
         data.city_name = name;
         //Gets the number statistics then insert the structure to the data set
         get_num_statistics(file_reader, data, word);
         dataset.insert(data);
         
         //Ignores the rest of the line if there are anything leftover, this assumes that the user has inputted 0 and % together.
-        //IF ANY OF YOU GUYS HAVE A BETTER WAY TO DO THIS WITHOUT HARDCODING, LET ME KNOW
         if (file_reader >> word) {
             std::string line;
             getline(file_reader, line);

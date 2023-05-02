@@ -52,6 +52,21 @@ City HashTable::get_city(const std::string name) {
     return district;
 }
 
+bool HashTable::find_city(std::string name)
+{
+    int h = hash_code(name);
+    Node* trav = buckets[h];
+    bool found = false;
+    //Iterates through the linked list of the spot until it find the city or a null ptr(city does not exist)
+    while (trav != nullptr) {
+        if (buckets[h]->district.city_name == name) {
+            found = true;
+            break;
+        }
+    }
+    return found;
+}
+
 void HashTable::delete_table() {
     Node* to_delete;
     //points the to_delete variable to buckets's array vector

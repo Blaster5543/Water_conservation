@@ -52,6 +52,7 @@ City HashTable::get_city(const std::string name) {
     return district;
 }
 
+//copy paste this into "hash_table.cpp"
 bool HashTable::find_city(std::string name)
 {
     int h = hash_code(name);

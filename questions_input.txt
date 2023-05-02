@@ -1,6 +1,10 @@
-1. How much water does your faucet take up?
-2. How much water does your toilet flush?
-3. How large is your hose?
-4. How much water does your laundry machine use?
-5. How much water does your dishwasher use?
-6. How much water does your lawn require (Find the width and length then multiply by 0.623)?
+1. How long do you use the faucet for? (Answer in minutes)
+2. How many times do you use the bathroom per day?
+3. How long do you use the water hose for? (Answer in minutes)
+4. How many times do you use the laundry machine per week?
+5. How many times do you use the dishwasher per week?
+6. How many times do you wash the dishes per day?
+7. How long do you shower for? (Answer in minutes)
+8. How many times do you wash your car at home per week?
+9. How many times do you water your lawn per week?
+10. How many times did you tend to the garden per week?

@@ -11,31 +11,70 @@
 //Eric Huang
 //Khwaja Sana Sidiqi
 
-int calculation(std::string y_n_chain) {
+//Dylan Chiu //Works
+//Last modified: 04/26/23
+/**
+ * Calculates the gallons used from the user's inputs
+ * @param y_n_chain The string of answers from the user
+*/
+double calculation(std::string y_n_chain) {
     std::ifstream gallons_file("questions_gallons_used.txt");
     std::string line;
-    int gallons = 0;
+    double gallons = 0;
     int pos = 0;
+    int line_pos = 0;
     while (getline(gallons_file, line)) {
-        if (y_n_chain[pos] == 'Y') {
-            gallons += stoi(line);
+        for(int i = 0; i < line.length(); i++) {
+            if (line[i] == ' ') {
+                line_pos = i;
+                break;
+            }
         }
+
+        if (y_n_chain[pos] == 'Y') {
+            line = line.substr(0, line_pos);
+        } else {
+            line = line.substr(line_pos + 1, line.length() - line_pos);
+        }
+
+        gallons += stoi(line);
         pos++;
     }
 
-    /*Calculate the user's gallons per day based on their yes or no question or personal information
-    if (personal information) {
-        Calculate each personal information into a gallons used per day
-    } else {
-        Calculate based on the yes or no question (assume the max gallons used)
+    return gallons;
+}
+
+//Dylan Chiu
+//Last modified: 05/01/23
+double calculation(double answer, int pos) {
+    std::ifstream input_gallons_file("questions_input.txt");
+    std::ifstream gallons_used_file("questions_gallons_input_used.txt");
+    std::string line;
+    std::string gallon_amount;
+    double gallons = 0;
+
+    for (int i = 0; i < pos; i++) {
+        getline(input_gallons_file, line);
+        getline(gallons_used_file, gallon_amount);
     }
-    return the gallons used per day
-    */
-   return gallons;
+
+    if (line.find("long") != std::string::npos) {
+        gallons = stoi(gallon_amount);
+        gallons *= ((answer / 60) * 24) * 365;
+    } else if (line.find("many") != std::string::npos) {
+        gallons = stoi(gallon_amount);
+        if (line.find("day") != std::string::npos) {
+            gallons *= answer * 365;
+        } else {
+            gallons *= answer * 52;
+        }
+    }
+
+    return gallons;
 }
 
 //Dylan Chiu //Works
-//Last modified: 04/26/23
+//Last modified: 04/29/23
 void set_up_survey(std::unordered_map<int, std::unordered_set<std::string>>& survey) {
     int washroom_category = 1;
     int garden_category = 2;
@@ -87,8 +126,8 @@ void set_up_survey(std::unordered_map<int, std::unordered_set<std::string>>& sur
 }
 
 //Dylan Chiu
-//Needs to be improved to be tailor made. Only prints out the general category.
-void print_tips(std::string num_code, std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
+//Only prints out the general category.
+void print_categories_tips(std::string num_code, std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
     int category;
     std::unordered_set<std::string> tips_to_print;
     for (int i = 0; i < num_code.length(); i++) {
@@ -101,53 +140,76 @@ void print_tips(std::string num_code, std::unordered_map <int, std::unordered_se
     }
 }
 
+//Dylan Chiu //Works
+//Last modified 04/30/23
+/**
+ * Prints out the general tips to conserve water
+ * @param unordered_map survey_tips: The map needed to print out the general tips
+ */
+void print_general_tips(std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
+    std::unordered_set<std::string> tips_to_print;
+    tips_to_print = survey_tips[5];
+    for (auto iter : tips_to_print) {
+        std::cout << iter << std::endl;
+    }
+}
+
 //Dylan Chiu
 void survey_input(std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
+    using namespace std;
     const int DAYS_IN_YEAR = 365;
-    const int HOUSE_WATER_PER_YEAR = 109500;
-    const int EFFICIENT_WATER_PER_YEAR = 87600;
-    std::ifstream questions("questions_input.txt");
-    std::string line;
-    int gallons;
-    int total;
-    std::cout << "Please gather the necessary data to input your gallons usage!" << std::endl;
-    std::cout << "Here are the questions! (Input 0 if you do not use/have)" << std::endl;
+    const int HOUSE_WATER_PER_YEAR = 69350;
+    const int EFFICIENT_WATER_PER_YEAR = 52012;
+    ifstream questions("questions_input.txt");
+    string line;
+    double answer;
+    double total;
+    cout << "Here are the questions!" << endl;
+    cout << "(Input 0 if you do not use/have, input -1 if you aren't sure (This assume standard or average))" << endl;
     while (getline(questions, line)) {
-        std::cout << line << std::endl;
-        std::cin >> gallons;
-        total += gallons;
+        cout << line << endl;
+        cin >> answer;
     }
 
-    total *= DAYS_IN_YEAR;
-    std::cout << "This is how many gallons you would use per year! Gallons used: ";
-    std::cout << total << std::endl;
+    cout << "This is how many gallons you would use per year! Gallons used: ";
+    cout << total << endl;
     if (total > HOUSE_WATER_PER_YEAR) {
-        std::cout << "You're using too much water! Consider buying more water efficient appliances!" << std::endl;
+        cout << "You're using too much water! Consider buying more water efficient appliances!" << endl;
     } else if (total < HOUSE_WATER_PER_YEAR && total > EFFICIENT_WATER_PER_YEAR) {
-        std::cout << "You're using the average amount. Not bad but you can cut it down more!" << std::endl;
+        cout << "You're using the average amount. Not bad but you can cut it down more!" << endl;
     } else if (total < EFFICIENT_WATER_PER_YEAR) {
-        std::cout << "You're doing great with water conservation! Keep up the good work!" << std::endl;
+        cout << "You're doing great with water conservation! Keep up the good work!" << endl;
     }
 }
 
 //Dylan Chiu //Works
 //Last modified: 04/29/23
-void survey_question(BinaryTree& QNA_tree, std::string& choice, 
-    std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
+/**
+ * Asks the user to use yes or no question and prints out the resulting gallons used
+ * Proceeds to print out tips for them to save water
+ * @param BinaryTree QNA_tree: Binary decision tree to help with the major categories checks
+ * @param std::unordered_map survey_tips: The unordered map containing an unordered set of survey_tips
+*/
+void survey_question(BinaryTree& QNA_tree, std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
     const int QUESTIONS_PER_CATEGORY = 5;
-    const int HOUSE_WATER_PER_YEAR = 109500;
-    const int EFFICIENT_WATER_PER_YEAR = 87600;
+    const int HOUSE_WATER_PER_YEAR = 69350;
+    const int EFFICIENT_WATER_PER_YEAR = 52012;
+    const double COST_PER_GALLON = 0.007;
     using namespace std;
     string answer;
     string y_n_chain;
     string line;
     ifstream questions_parse("questions.txt");
-    int gallons;
+    double gallons;
+    string num_code;
 
-    //Gets 
+    //Gets the questions from the text file to give to the user to answer
     while (getline(questions_parse, line)) {
         cout << line << endl;
         cin >> answer;
+        if (islower(answer[0])) {
+            answer = toupper(answer[0]);
+        }
         y_n_chain += answer;
     }
 
@@ -157,12 +219,13 @@ void survey_question(BinaryTree& QNA_tree, std::string& choice,
     y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY - 1];
     y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY * 2 - 1];
     y_n_categories += y_n_chain[QUESTIONS_PER_CATEGORY * 3 - 1];
-    string num_code;
 
     num_code = QNA_tree.get_data(QNA_tree.get_root(), y_n_categories, 0);
+    gallons = calculation(y_n_chain);
+
+    //Outputs how much gallons the user uses and tells them if they're above average, average, or efficient
     cout << "Combining with our survey, we have calculated how much water you used ";
     cout << "(This is how many gallons used per year assuming you use them everyday)!" << endl;
-    gallons = calculation(y_n_chain);
     cout << "You use " << gallons << " gallons per year!" << endl;
     if (gallons > HOUSE_WATER_PER_YEAR) {
         cout << "You use more water than the average American household, consider cutting it down!" << endl;
@@ -171,9 +234,24 @@ void survey_question(BinaryTree& QNA_tree, std::string& choice,
     } else if (gallons < EFFICIENT_WATER_PER_YEAR) {
         cout << "You use less water than the average! Keep up the great work!" << endl;
     }
-    
+
+    cout << endl;
+
+    //Outputs the amount of money the user is spending.
+    cout << "This is how much money you're spending on water! ";
+    cout << "$" << gallons * COST_PER_GALLON << endl;
+
+    //Prints out the amount of money 
+    if (gallons > EFFICIENT_WATER_PER_YEAR) {
+        cout << endl;
+        cout << "And this is how much money you could save! ";
+        double money_saved = (gallons * COST_PER_GALLON) - (EFFICIENT_WATER_PER_YEAR * COST_PER_GALLON);
+        cout << "$" << money_saved << endl;
+    }
+
+    cout << endl;
     cout << "Above all, we also will give you some tips on how to save more water!" << endl;
-    print_tips(num_code, survey_tips);
+    print_categories_tips(num_code, survey_tips);
 }
 
 //Dylan Chiu
@@ -188,12 +266,15 @@ void survey(BinaryTree& QNA_tree, std::unordered_map <int, std::unordered_set<st
         std::cin >> choice;
         if (choice == "1") {
             std::cout << "Please input the information pertaining to these questions to the gallon." << std::endl;
-            survey_input(survey_tips);
+            //survey_input(survey_tips);
         } else {
             std::cout << "Answer these simple yes or no questions and we will calculate the gallons used by you! ";
-            std::cout << "(All must be answered with Y/N)" << std::endl;
-            survey_question(QNA_tree, choice, survey_tips);
+            std::cout << "(All must be answered with Y/N, if you aren't sure, type in N)" << std::endl;
+            survey_question(QNA_tree, survey_tips);
         }
+
+        std::cout << "Here are also some general tips to save water!";
+        print_general_tips(survey_tips);
 
         std::cout << "Would you like to take the survey again? (Y/N) ";
         std::cin >> choice;
@@ -227,6 +308,8 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
         std::string choice;
         std::cout << "Do you want to see the statistics of a county or compare? (1 for a single county, 2 for compare) ";
         std::cin >> choice;
+        if (choice == "1") {
+            std::cout << "What county do you want to view? (Type in the full name, ";
         if (choice == "1") 
         {
             std::cout << "What county do you want to view? (Type in the full name) ";
@@ -237,27 +320,34 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
                 std::cout << "Could not find city name :(\nPlease try again(Type in the full name): ";
                 std::cin >> name;
             }
-            
+
             City temp = dataset.get_city(name);     //temp just holds the data for the city that we will display
             std::cout << temp.city_name << "\nPopulation: " << temp.population << "\nGallons per Capita: " << temp.gallons_per_capita << "\nGallons per Resident: " << temp.gallons_per_resident << "\n"; 
-                                    
+        } else {
+
         } 
         if (choice == "2") 
         {
             name = "";
             bool done = false;
             Queue cities_to_be_compared;
+            std::cout << "What county do you want to be the compared? ";
+            std::cin >> name;
+
+            while (name != "0")
             do
             {
+                std::cout << "What counties do you want to compare it with? (Type in the full name, )";
+            } 
                 std::cout << "What counties do you want to compare? (Enter '0' to exit) ";
                 std::cin >> name;
-                
+
                 if (name == "0") {done = true;}
                 if (dataset.find_city(name)) //if the user input  matches our database name 
                 {
                     cities_to_be_compared.push(name);
                 }
-                
+
             } while (!done);
 
         }
@@ -270,21 +360,6 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
             break;
         }
     }
-
-    /*Ask the user for what county they live in.
-   Ask the user if they want just the county they live in statistics or to compare
-   if(just statistics) {
-      Print out statistics
-   } else {
-      While loop {
-         Ask the user for what counties they want (use sentinel value to stop) 
-         Put each of the name of the counties in a queue
-      }
-      Print out the table of the counties statistics compared to the county the user lives in
-   }
-
-   Print out the timer
-*/
 }
 
 //Dylan Chiu //Works
@@ -320,7 +395,10 @@ void set_qna_tree(BinaryTree& QNA_tree) {
 //Dylan Chiu //Works
 //Last updated: 04/24/23
 /**
- * 
+ * Gets the numerical statistics from the text file to aid the file parser in
+ * @param ifstream file_reader: The file that will be read from
+ * @param City data: The city struct that the file is currently on
+ * @param string word: The numerical statistic
 */
 void get_num_statistics(std::ifstream& file_reader, City& data, std::string& word) {
     std::string population;
@@ -330,6 +408,7 @@ void get_num_statistics(std::ifstream& file_reader, City& data, std::string& wor
 
     population = word;
 
+    //Gets rid of any commas in the numerical statistic of population
     for (int i = 0; i < word.length(); i++) {
         if (word[i] == ',') {
             std::string temp = population.substr(0, i);
@@ -340,6 +419,7 @@ void get_num_statistics(std::ifstream& file_reader, City& data, std::string& wor
         data.population = pop;
     }
 
+    //Reads the next two statistics of gallons per capita use and gallons per resident use
     file_reader >> word;
     gallons = stoi(word);
     data.gallons_per_capita = gallons;
@@ -350,6 +430,10 @@ void get_num_statistics(std::ifstream& file_reader, City& data, std::string& wor
 
 //Dylan Chiu //Works
 //Last updated: 04/24/23
+/**
+ * Gets the data from the text files
+ * @param HashTable dataset: The HashTable to put the data of the text file into
+*/
 void file_parser(HashTable& dataset) {
     std::ifstream file_reader("water_table.txt");
     std::string word;

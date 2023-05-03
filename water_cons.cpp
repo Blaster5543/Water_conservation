@@ -140,6 +140,11 @@ void set_up_survey(std::unordered_map<int, std::unordered_set<std::string>>& sur
     survey[general_category] = general_tips;
 }
 
+print_city_info(City temp)
+{
+    std::cout << temp.city_name << "\nPopulation: " << temp.population << "\nGallons per Capita: " << temp.gallons_per_capita << "\nGallons per Resident: " << temp.gallons_per_resident << "\n\n\n"; 
+}
+
 //Dylan Chiu
 //Only prints out the general category.
 void print_categories_tips(std::string num_code, std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
@@ -395,9 +400,8 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
                 std::cout << "Could not find city name :(\nPlease try again(Type in the full name): ";
                 std::cin >> name;
             }
-
-            City temp = dataset.get_city(name);     //temp just holds the data for the city that we will display
-            std::cout << temp.city_name << "\nPopulation: " << temp.population << "\nGallons per Capita: " << temp.gallons_per_capita << "\nGallons per Resident: " << temp.gallons_per_resident << "\n"; 
+            print_city_info(dataset.get_city(name));     
+            
         } else {
 
             if (choice == "2") 
@@ -423,6 +427,11 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
 
                 } while (!done);
 
+                while(cities_to_be_compared.size() > 0)
+                {
+                    print_city_info(dataset.get_city(cities_to_be_compared.front()));
+                    cities_to_be_compared.remove();
+                }
             }
 
             timer();

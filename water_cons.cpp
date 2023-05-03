@@ -329,9 +329,9 @@ void timer() {
 */
 
 /*
-void swap(int& x, int& y)
+void swap(City& x, City & y)
 {  
-   int temp = x;
+   City temp = x;
    x = y;
    y = temp;
 }*/
@@ -352,8 +352,8 @@ int partition(City a[], int from, int to)
    int j = to + 1;
    while (i < j)
    {
-      i++; while (a[i] < pivot) { i++; }
-      j--; while (a[j] > pivot) { j--; }
+      i++; while (a[i].gallons_per_capita < pivot) { i++; }
+      j--; while (a[j].gallons_per_capita > pivot) { j--; }
       if (i < j) { swap(a[i], a[j]); }
    }
    return j;
@@ -416,7 +416,7 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
                     std::cin >> name;
 
                     if (name == "0") {done = true;}
-                    if (dataset.find_city(name)) //if the user input  matches our database name 
+                    if (dataset.find_city(name)) //if the user input matches our database name 
                     {
                         cities_to_be_compared.push(name);
                     }
@@ -521,7 +521,7 @@ void file_parser(HashTable& dataset) {
             name += " ";
             file_reader >> word;
         }
-        
+
         data.city_name = name;
         //Gets the number statistics then insert the structure to the data set
         get_num_statistics(file_reader, data, word);

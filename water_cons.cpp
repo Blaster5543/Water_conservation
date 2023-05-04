@@ -452,8 +452,6 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
             return;
         }
 
-        
-
         std::cout << "Would you like to look at some statistics again? (Y/N) ";
         std::cin >> choice;
         if (choice == "Y") {
@@ -569,7 +567,7 @@ void file_parser(HashTable& dataset) {
 //Last updated: 04/24/23
 int main() {
     std::string user_choice; //Holds the user's choice
-    const int WATER_RESEVOIR_LEVEL = 16000000; //The current resevoir level
+    const int WATER_RESEVOIR_LEVEL = 41237; //The current resevoir level
     const int NBUCKETS = 599; //The hashtable size
     HashTable dataset(NBUCKETS);
     BinaryTree QNA_tree;

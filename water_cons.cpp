@@ -343,9 +343,10 @@ void print_city_info(City temp, City compare)
     cout << "Gallons per Resident: " << temp.gallons_per_resident << setw(39) << compare.gallons_per_resident << endl;
 }
 
-void timer() {
-    /*
-    */
+void timer(City city_data, int resLevel) 
+{
+    int years_left = resLevel / (city_data.gallons_per_capita);
+    std::cout << "City's water level will last them " << years_left << " years!\n";
 }
 
 
@@ -444,13 +445,14 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
 
                 while(cities_to_be_compared.size() > 0) {
                     print_city_info(dataset.get_city(cities_to_be_compared.front()), dataset.get_city(compare_name));
+                    timer(dataset.get_city(cities_to_be_compared.front()), WATER_RESEVOIR_LEVEL);
                     cities_to_be_compared.remove();
                 }
         } else {
             return;
         }
 
-        timer();
+        
 
         std::cout << "Would you like to look at some statistics again? (Y/N) ";
         std::cin >> choice;

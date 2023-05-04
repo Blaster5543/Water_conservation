@@ -63,6 +63,8 @@ bool HashTable::find_city(std::string name)
         if (buckets[h]->district.city_name == name) {
             found = true;
             break;
+        } else {
+            trav = trav->next;
         }
     }
     return found;

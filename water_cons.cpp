@@ -8,6 +8,7 @@
 #include "city.h"
 #include "tree.h"
 #include <iomanip>
+#include <vector>
 //Dylan Chiu
 //Eric Huang
 //Khwaja Sana Sidiqi
@@ -47,6 +48,9 @@ double calculation(std::string y_n_chain) {
 
 //Dylan Chiu
 //Last modified: 05/01/23
+/**
+ * Calculates using the answer from 
+*/
 double calculation(double answer, int pos) {
     std::ifstream input_gallons_file("questions_input.txt");
     std::ifstream gallons_used_file("questions_gallons_input_used.txt");
@@ -90,6 +94,10 @@ double calculation(double answer, int pos) {
 
 //Dylan Chiu //Works
 //Last modified: 04/29/23
+/**
+ * Sets up the tips for the survey
+ * @param survey unordered map that contains a number associated with an unordered set of tips
+*/
 void set_up_survey(std::unordered_map<int, std::unordered_set<std::string>>& survey) {
     int washroom_category = 1;
     int garden_category = 2;
@@ -140,11 +148,6 @@ void set_up_survey(std::unordered_map<int, std::unordered_set<std::string>>& sur
     survey[general_category] = general_tips;
 }
 
-print_city_info(City temp)
-{
-    std::cout << temp.city_name << "\nPopulation: " << temp.population << "\nGallons per Capita: " << temp.gallons_per_capita << "\nGallons per Resident: " << temp.gallons_per_resident << "\n\n\n"; 
-}
-
 //Dylan Chiu
 //Only prints out the general category.
 void print_categories_tips(std::string num_code, std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
@@ -177,7 +180,6 @@ void print_general_tips(std::unordered_map <int, std::unordered_set<std::string>
 //Dylan Chiu
 void survey_input(std::unordered_map <int, std::unordered_set<std::string>>& survey_tips) {
     using namespace std;
-    const int DAYS_IN_YEAR = 365;
     const int HOUSE_WATER_PER_YEAR = 69350;
     const int EFFICIENT_WATER_PER_YEAR = 52012;
     ifstream questions("questions_input.txt");
@@ -294,15 +296,17 @@ void survey(BinaryTree& QNA_tree, std::unordered_map <int, std::unordered_set<st
     std::cout << "By lowering your water bill, you can help conserve water as well!" << std::endl;
     while (true) {
         std::cout << "Would you like to use your personal information or would you like to answer some yes or no questions? ";
-        std::cout << "(1 for personal information, 2 for questions)" << std::endl;
+        std::cout << "(1 for personal information, 2 for questions, enter 3 to go back)" << std::endl;
         std::cin >> choice;
         if (choice == "1") {
             std::cout << "Please input the information pertaining to these questions to the gallon." << std::endl;
             survey_input(survey_tips);
-        } else {
+        } else if (choice == "2") {
             std::cout << "Answer these simple yes or no questions and we will calculate the gallons used by you! ";
             std::cout << "(All must be answered with Y/N, if you aren't sure, type in N)" << std::endl;
             survey_question(QNA_tree, survey_tips);
+        } else if (choice == "3") {
+            return;
         }
 
         std::cout << "Here are also some general tips to save water!";
@@ -319,6 +323,24 @@ void survey(BinaryTree& QNA_tree, std::unordered_map <int, std::unordered_set<st
             break;
         }
     }
+}
+
+//Prints the city info of one city
+void print_city_info(City city) {
+    std::cout << city.city_name << std::endl;
+    std::cout << "Population: " << city.population << std::endl;
+    std::cout << "Gallons per Capita: " << city.gallons_per_capita << std::endl;
+    std::cout << "Gallons per Resident: " << city.gallons_per_resident << std::endl;
+}
+
+//Prints the city info side by side for comparison
+void print_city_info(City temp, City compare)
+{
+    using namespace std;
+    cout << " " << setw(10) << temp.city_name << " " << setw(10) << compare.city_name << endl;
+    cout << "Population: " << temp.population  << setw(50) << compare.population << endl;
+    cout << "Gallons per Capita: " << temp.gallons_per_capita << setw(40) << compare.gallons_per_capita << endl;
+    cout << "Gallons per Resident: " << temp.gallons_per_resident << setw(39) << compare.gallons_per_resident << endl;
 }
 
 void timer() {
@@ -386,61 +408,56 @@ void quicksort(City a[], int from, int to)
 //Edit3: 5/1/23
 void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
     while (true) {
-        std::string name;
+        std::string name = "";
         std::string choice;
-        std::cout << "Do you want to see the statistics of a county or compare? (1 for a single county, 2 for compare) ";
+        std::cout << "Do you want to see the statistics of a county or compare? (1 for a single county, 2 for compare, 3 to go back) ";
         std::cin >> choice;
-        if (choice == "1") 
-        {
-            std::cout << "What county do you want to view? (Type in the full name) ";
-            std::cout << "if it is \"City of\", put City of first then the name) ";
-            std::cin >> name;
-            while (!dataset.find_city(name)) 
-            {
-                std::cout << "Could not find city name :(\nPlease try again(Type in the full name): ";
-                std::cin >> name;
+        if (choice == "1") {
+            std::cin.ignore(1,'\n');
+            std::cout << "What county do you want to view? (Type in the full name exactly as it shows) ";
+            getline(std::cin, name);
+            while (!dataset.find_city(name)) {
+                std::cout << "Could not find city name " << name << ". Please type in the name again. ";
+                getline(std::cin, name);
             }
-            print_city_info(dataset.get_city(name));     
-            
-        } else {
 
-            if (choice == "2") 
-            {
-                name = "";
+            print_city_info(dataset.get_city(name));
+        } else if (choice == "2") {
+                std::string compare_name = "";
                 bool done = false;
                 Queue cities_to_be_compared;
                 std::cout << "What county do you want to be the compared? ";
-                std::cin >> name;
-
+                std::cin.ignore(1,'\n');
+                getline(std::cin, compare_name);
+                std::cout << "What counties do you want to compare? (Enter '0' to exit) ";
                 while (name != "0")
-                do
-                {
-                    std::cout << "What counties do you want to compare it with? (Type in the full name, )";
-                    std::cout << "What counties do you want to compare? (Enter '0' to exit) ";
-                    std::cin >> name;
+                do {  
 
-                    if (name == "0") {done = true;}
-                    if (dataset.find_city(name)) //if the user input matches our database name 
-                    {
+                    getline(std::cin, name); 
+                    if (name == "0") {done = true;} //Terminates loop if user inputs 0
+                    if (dataset.find_city(name)) {//if the user input matches our database name pushes the city into the queue
                         cities_to_be_compared.push(name);
                     }
 
                 } while (!done);
 
-                while(cities_to_be_compared.size() > 0)
-                {
-                    print_city_info(dataset.get_city(cities_to_be_compared.front()));
+
+                while(cities_to_be_compared.size() > 0) {
+                    print_city_info(dataset.get_city(cities_to_be_compared.front()), dataset.get_city(compare_name));
                     cities_to_be_compared.remove();
                 }
-            }
+        } else {
+            return;
+        }
 
-            timer();
+        timer();
 
-            std::cout << "Would you like to use the statistics again? (Y/N) ";
-            std::cin >> choice;
-            if (choice == "N") {
-                break;
-            }
+        std::cout << "Would you like to look at some statistics again? (Y/N) ";
+        std::cin >> choice;
+        if (choice == "Y") {
+            continue;
+        } else {
+            break;
         }
     }
 }
@@ -531,23 +548,16 @@ void file_parser(HashTable& dataset) {
             file_reader >> word;
         }
 
+        name = name.substr(0, name.length() - 1);
+        
+
         data.city_name = name;
         //Gets the number statistics then insert the structure to the data set
         get_num_statistics(file_reader, data, word);
         dataset.insert(data);
         
-        //Ignores the rest of the line if there are anything leftover, this assumes that the user has inputted 0 and % together.
         if (file_reader >> word) {
-            std::string line;
-            getline(file_reader, line);
-            int pos_cutoff;
-            for (int i = 0; i < line.length(); i++) {
-                if (line[i] == '0' && line[i + 1] == '%') {
-                    pos_cutoff = line.length() - i;
-                    break;
-                }
-            }
-            file_reader.ignore(pos_cutoff, '\n');
+            file_reader.ignore(300, '\n');
         }
     }
     file_reader.close();

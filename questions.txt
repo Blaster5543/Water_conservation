@@ -1,7 +1,8 @@
-1. Do you often take baths?
+20 questions survey:
+1. Do you often take baths over showers?
 2. Do you often encounter leaks?
-3. Do you find yourself often washing loads of laundry?
-4. Do you find yourself taking quick showers?
+3. Do you often use a laundry machine at home?
+4. Do you often take less than 5 minute showers?
 5. Do you leave the sink running often?
 6. Do you often water the lawn in the afternoon?
 7. Do your plants often require watering?
@@ -9,12 +10,41 @@
 9. Are your plants native to the region?
 10. Do you find yourself constantly affected by droughts?
 11. Do you clean dishes with the water running?
-12. Do you use a or own one dishwasher?
+12. Do you often use a dishwasher?
 13. Do you often have to wait for the water to turn hot or cold?
 14. Do you often use large pots and pans for cooking?
-15. Do you often cook at home?
-16. Do you often hose the sidewalks?
+15. Do you often cook?
+16. Do you often wash the sidewalks with a hose?
 17. Do you own a pool?
 18. Do you often wash your car at home?
 19. Do you own/use a fountain or any ornamentary water object?
 20. Do you own a water softener?
+
+15 questions survey:
+1. Do you often take baths over showers?
+2. Do you often encounter leaks?
+3. Do you often use a laundry machine at home?
+4. Do you leave the sink running often?
+5. Do you often water the lawn in the afternoon?
+6. Do your plants often require watering?
+7. Do you garden often?
+8. Do you often use a dishwasher?
+9. Do you often have to wait for the water to turn hot or cold?
+10. Do you often cook?
+11. Do you often use large pots and pans for cooking?
+12. Do you often wash the sidewalks with a hose?
+13. Do you own a pool?
+14. Do you own a water softener?
+15. Do you own/use a fountain or any ornamentary water object?
+
+10 questions survey:
+1. Do you often take baths over showers?
+2. Do you encounter leaks often?
+3. Do you often use a laundry machine at home?
+4. Do you leave the sink running often?
+5. Do you often water the lawn in the afternoon?
+6. Do you often use a dishwasher?
+7. Do you often have to wait for the water to turn hot or cold?
+8. Do you often wash the sidewalks with a hose?
+9. Do you own a pool?
+10. Do you often wash your car at home? 

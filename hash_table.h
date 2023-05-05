@@ -35,7 +35,7 @@ public:
     * Checks if city data already exists
     * @return a 1 if city exists or 0 if it does not exist
    */
-   bool find_city(std::string); 
+   bool find_city(std::string);
 
    /**
     * Deletes the entire table.

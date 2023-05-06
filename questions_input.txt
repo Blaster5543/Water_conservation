@@ -4,7 +4,7 @@
 4. How many times do you use the laundry machine per week?
 5. How many times do you use the dishwasher per day?
 6. How many times do you wash the dishes per day?
-7. How long do you shower for? (Answer in minutes)
+7. How long do you shower for? (Answer in minutes, accumulate all the times you showered)
 8. How many times do you wash your car at home per week?
 9. How many times do you water your lawn per week?
 10. How many times did you tend to the garden per week?

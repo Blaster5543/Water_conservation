@@ -19,13 +19,13 @@
    @param y the second integer to swap
 */
 
-/*
-void swap(City& x, City & y)
+
+void swap(std::vector<City>& vec, int x, int y)
 {  
-   City temp = x;
-   x = y;
-   y = temp;
-}*/
+   City temp = vec[x];
+   vec[x] = vec[y];
+   vec[y] = temp;
+}
 
 /**
    Partitions a portion of an array.
@@ -35,8 +35,8 @@ void swap(City& x, City & y)
    @return the last index of the first partition
 */
 
-/*
-int partition(City a[], int from, int to)
+
+int partition(std::vector<City>& a, int from, int to)
 {
    int pivot = a[from].gallons_per_capita;
    int i = from - 1;
@@ -45,10 +45,10 @@ int partition(City a[], int from, int to)
    {
       i++; while (a[i].gallons_per_capita < pivot) { i++; }
       j--; while (a[j].gallons_per_capita > pivot) { j--; }
-      if (i < j) { swap(a[i], a[j]); }
+      if (i < j) { swap(a, i, j); }
    }
    return j;
-} */
+}
 
 /**
    Sorts a portion of an array, using quick sort.
@@ -56,15 +56,15 @@ int partition(City a[], int from, int to)
    @param from the first index of the portion to be sorted
    @param to the last index of the portion to be sorted
 */
-/*
-void quicksort(City a[], int from, int to)
+
+void quicksort(std::vector<City>& city_list, int from, int to)
 {
    if (from >= to) { return; }
-   int p = partition(a, from, to);
-   quicksort(a, from, p);
-   quicksort(a, p + 1, to);
+   int p = partition(city_list, from, to);
+   quicksort(city_list, from, p);
+   quicksort(city_list, p + 1, to);
 }
-*/
+
 
 //Dylan Chiu //Works
 //Last modified: 04/26/23
@@ -432,11 +432,11 @@ void timer(City city_data, int resLevel)
 //Edit: 4/25/23
 //Edit2: 4/29/23
 //Edit3: 5/1/23
-void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
+void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<City>& city_info) {
     while (true) {
         std::string name = "";
         std::string choice;
-        std::cout << "Do you want to see the statistics of a county or compare? (1 for a single county, 2 for compare, 3 to go back) ";
+        std::cout << "Do you want to see the statistics of a county, compare mutiply counties, or a sorted list of the most wasteful counties?? (1 for a single county, 2 for compare specific counties, 3 sorted list, 4 to go back):\n";
         std::cin >> choice;
         if (choice == "1") {
             std::cin.ignore(1,'\n');
@@ -473,7 +473,18 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL) {
                     timer(dataset.get_city(cities_to_be_compared.front()), WATER_RESEVOIR_LEVEL);
                     cities_to_be_compared.remove();
                 }
-        } else {
+        }
+        else if (choice == "3")
+        {
+            quicksort(city_info, 0, city_info.size());
+            std::cout << "The top 10 most wasteful cities are: \n";
+            for (int i = 0; i < 10; i++)
+            {
+                std::cout << city_info[i].city_name << ":\nGallons per Capita: " << city_info[i].gallons_per_capita << "\n\n";
+            }
+        }
+        
+         else {
             return;
         }
 
@@ -517,6 +528,14 @@ void set_qna_tree(BinaryTree& QNA_tree) {
     combo.close();
 }
 
+//Sana
+//Last updated 5/6/23
+void set_up_quicksort(City city_info)
+{
+    
+}
+
+
 //Dylan Chiu //Works
 //Last updated: 04/24/23
 /**
@@ -555,13 +574,16 @@ void get_num_statistics(std::ifstream& file_reader, City& data, std::string& wor
 
 //Dylan Chiu //Works
 //Last updated: 04/24/23
+//Sana 5/6/23: added a vector to store all of our city to quicksort later
 /**
  * Gets the data from the text files
  * @param HashTable dataset: The HashTable to put the data of the text file into
 */
-void file_parser(HashTable& dataset) {
+void file_parser(HashTable& dataset, std::vector<City>& city_vec) {
     std::ifstream file_reader("water_table.txt");
     std::string word;
+
+    int city_counter = 0;
 
     while (file_reader >> word) {
         City data;
@@ -580,23 +602,29 @@ void file_parser(HashTable& dataset) {
         //Gets the number statistics then insert the structure to the data set
         get_num_statistics(file_reader, data, word);
         dataset.insert(data);
+
+        city_vec.push_back(data); //adds to vectore for quicksorting
         
         if (file_reader >> word) {
             file_reader.ignore(300, '\n');
         }
     }
+
+    
     file_reader.close();
 }
+
 
 //Dylan Chiu
 //Last updated: 04/24/23
 int main() {
+    std::vector<City> city_data; //vector that stores all the city info
     std::string user_choice; //Holds the user's choice
-    const int WATER_RESEVOIR_LEVEL = 41237; //The current resevoir level
+    const int WATER_RESEVOIR_LEVEL = 42069; //The current resevoir level
     const int NBUCKETS = 599; //The hashtable size
     HashTable dataset(NBUCKETS);
     BinaryTree QNA_tree;
-    file_parser(dataset); //inserts the data set into the hash table
+    file_parser(dataset, city_data); //inserts the data set into the hash table
     set_qna_tree(QNA_tree); //initializes the binary decision tree
     std::unordered_map <int, std::unordered_set<std::string>> survey_tips;
     set_up_survey(survey_tips);

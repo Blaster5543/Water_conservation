@@ -482,11 +482,15 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
     while (true) {
         std::string name = "";
         std::string choice;
-        std::cout << "Do you want to see the statistics of a county, compare mutiply counties, or a sorted list of the most wasteful counties?? (1 for a single county, 2 for compare specific counties, 3 sorted list, 4 to go back):\n";
+        std::cout << "Do you want to see the statistics of a county, compare mutiply counties, or a sorted list of the most wasteful counties? "
+        std::cout << "(1 for a single county, 2 for compare specific counties, 3 sorted list, 4 to go back):\n";
         std::cin >> choice;
         if (choice == "1") {
             std::cin.ignore(1,'\n');
             std::cout << "What county do you want to view? (Type in the full name exactly as it shows) ";
+            for (int i = 0; i < city_info.size(); i++) {
+                std::cout << city_info[i].city_name << std::endl;
+            }
             getline(std::cin, name);
             while (!dataset.find_city(name)) {
                 std::cout << "Could not find city name " << name << ". Please type in the name again. ";
@@ -656,7 +660,6 @@ int main() {
     set_qna_tree(QNA_tree); //initializes the binary decision tree
     std::unordered_map <int, std::unordered_set<std::string>> survey_tips;
     set_up_survey(survey_tips);
-    //print_map(survey_questions);
 
     std::cout << "Welcome user! This program is designed to help you understand";
     std::cout << " the importance of water conservation! Would you like to use it? (Y/N) ";

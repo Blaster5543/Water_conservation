@@ -445,6 +445,7 @@ void timer(City city_data, int resLevel)
     std::cout << "City's water level will last them " << years_left << " years!\n";
 }
 
+//swap function for our quicksort algorithm.
 void swap(std::vector<City>& vec, int x, int y)
 {  
    City temp = vec[x];
@@ -452,6 +453,7 @@ void swap(std::vector<City>& vec, int x, int y)
    vec[y] = temp;
 }
 
+//parition function for our quicksort alogrithm
 int partition(std::vector<City>& a, int from, int to)
 {
    int pivot = a[from].gallons_per_capita;
@@ -466,6 +468,7 @@ int partition(std::vector<City>& a, int from, int to)
    return j;
 }
 
+//Sort all the cities in our vector based on the gallon's per capita used.  
 void quicksort(std::vector<City>& city_list, int from, int to)
 {
    if (from >= to) { return; }
@@ -478,17 +481,26 @@ void quicksort(std::vector<City>& city_list, int from, int to)
 //Edit: 4/25/23
 //Edit2: 4/29/23
 //Edit3: 5/1/23
+/**
+ * Function that handels the maniuplation of the city data
+ * @param dataset the HashTable that we use that stores our cities
+ * @param WATER_RESEVOIR_LEVEL the water resovior level
+ * @param city_info vector to use quicksort on
+ * @authors Khwaja Sana Sidiqi, Dylan Chiu
+*/
 void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<City>& city_info) {
     while (true) {
-        std::string name = "";
-        std::string choice;
-        std::cout << "Do you want to see the statistics of a county, compare mutiply counties, or a sorted list of the most wasteful counties? "
+        std::string name = "";  //string to hold city name
+        std::string choice;     //string to hold user's input choice
+        std::cout << "Do you want to see the statistics of a county, compare mutiply counties, or a sorted list of the most wasteful counties? ";
         std::cout << "(1 for a single county, 2 for compare specific counties, 3 sorted list, 4 to go back):\n";
         std::cin >> choice;
-        if (choice == "1") {
+
+        //decides what to do with the data based on the user's input
+        if (choice == "1") {  
             std::cin.ignore(1,'\n');
             std::cout << "What county do you want to view? (Type in the full name exactly as it shows) ";
-            for (int i = 0; i < city_info.size(); i++) {
+            for (int i = 0; i < city_info.size(); i++) { //outputs info for the city the user wants
                 std::cout << city_info[i].city_name << std::endl;
             }
             getline(std::cin, name);
@@ -497,7 +509,10 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
                 getline(std::cin, name);
             }
             print_city_info(dataset.get_city(name));
-        } else if (choice == "2") {
+        } 
+        
+        //shows info for mulitplie cities
+        else if (choice == "2") {
                 std::string compare_name = "";
                 bool done = false;
                 Queue cities_to_be_compared;
@@ -505,6 +520,8 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
                 std::cin.ignore(1,'\n');
                 getline(std::cin, compare_name);
                 std::cout << "What counties do you want to compare? (Enter '0' to exit) ";
+
+                //adds the cities to a queue until the user quits
                 while (name != "0")
                 do {  
                     getline(std::cin, name); 
@@ -514,15 +531,18 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
                     }
                 } while (!done);
 
+                //for all the cities in the queue, display their info
                 while(cities_to_be_compared.size() > 0) {
                     print_city_info(dataset.get_city(cities_to_be_compared.front()), dataset.get_city(compare_name));
                     timer(dataset.get_city(cities_to_be_compared.front()), WATER_RESEVOIR_LEVEL);
                     cities_to_be_compared.remove();
                 }
 
+
+        //sorts and displays all cities in the list in order
         } else if (choice == "3") {
             quicksort(city_info, 0, city_info.size());
-            std::cout << "The top 10 most wasteful cities are: \n";
+            std::cout << "The most wasteful cities in order are: \n";
             for (int i = city_info.size() - 1; i > city_info.size() - 11; i--)
             {
                 std::cout << city_info[i].city_name << ":\nGallons per Capita: " << city_info[i].gallons_per_capita << "\n\n";

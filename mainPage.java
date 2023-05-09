@@ -6,16 +6,16 @@ import javax.swing.border.Border;
 
 class mainPage extends imgoinginsane {
 
-     JFrame frame = new JFrame();
+    private   JFrame frame = new JFrame();
 
-     JPanel background = new JPanel();
-     JLabel title = new JLabel("Select a function");
-     JButton BACK = new JButton("back");
-     JButton Survey = new JButton("User Survey");
+    private   JPanel background = new JPanel();
+    private  JLabel title = new JLabel("Select a function");
+    private  JButton BACK = new JButton("back");
+    private   JButton Survey = new JButton("User Survey");
 
-     JButton Yesnt = new JButton("Simplified Survey");
+    private    JButton Yesnt = new JButton("Simplified Survey");
 
-     JButton countyInfo = new JButton("Information");
+    private    JButton countyInfo = new JButton("Information");
 
      mainPage() {
 
@@ -66,18 +66,20 @@ class mainPage extends imgoinginsane {
 
          frame.add(back);
 
+
      }
 
      public void actionPerformed(ActionEvent e) {
          if (e.getSource() == Survey) {
-           dispose(); //bug
+            frame.dispose();
              Survey one = new Survey();
-         } else if (e.getSource() == BACK) {
+         } if (e.getSource() == BACK) {
             imgoinginsane one = new imgoinginsane();
 
-         } else if (e.getSource() == Yesnt) {
+         } if (e.getSource() == Yesnt) {
+             frame.dispose();
              Yesnt one = new Yesnt();
-         } else if (e.getSource() == countyInfo) {
+         }  if (e.getSource() == countyInfo) {
              info one = new info();
          }
      }

@@ -1,4 +1,3 @@
-import java.awt.GridBagConstraints;
 import java.awt.event.ActionListener;
 import java.awt.*;
 import java.awt.event.*;
@@ -6,20 +5,27 @@ import javax.swing.JFrame;
 import javax.swing.*;
 import javax.swing.UIManager;
 import javax.swing.border.Border;
+import javax.swing.border.EmptyBorder;
+
 //flatpak
-public class imgoinginsane extends JFrame implements  ActionListener {
-    JFrame frame = new JFrame();
-    JButton START = new JButton ("Begin Program");
-    JButton EXIT = new JButton ("Exit Program");
-    JPanel background = new JPanel();
-    JLabel WELCOME =  new JLabel( "A Simple Water Calculator");
+public class imgoinginsane implements  ActionListener {
+    private   JFrame frame = new JFrame();
+    private   JButton START = new JButton ("Begin Program");
+    private   JButton EXIT = new JButton ("Exit Program");
+    private   JPanel background = new JPanel();
+    private   JTextArea WELCOME =  new JTextArea( "A Simple Water Calculator");
 
     imgoinginsane() {
-        setTitle("Water Project");
+        frame.setTitle("Water Project");
 
-        WELCOME.setBounds(150, 200, 200,40);
-        Font  f1  = new Font(Font.SANS_SERIF, Font.PLAIN,  16);
+        WELCOME.setBounds(150, 200, 400,40);
+        Font f1 = new Font(Font.SANS_SERIF, Font.PLAIN, 16);
         WELCOME.setFont(f1);
+        WELCOME.setLineWrap(true);
+        WELCOME.setWrapStyleWord(true);
+        WELCOME.setEditable(false);
+        WELCOME.setOpaque(false);
+        WELCOME.setBorder(new EmptyBorder(0, 0, 0, 0));
         frame.add(WELCOME);
         WELCOME.setVisible(true);
 
@@ -59,12 +65,8 @@ public class imgoinginsane extends JFrame implements  ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == START) {
-            dispose(); //bug
             frame.dispose();
-            frame.disable();
-            frame.setVisible(false);
             mainPage myPage = new mainPage();
-
 
         }
          else if (e.getSource() == EXIT) {

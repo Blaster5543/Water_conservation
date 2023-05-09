@@ -90,7 +90,7 @@ public class infopage extends info implements ActionListener {
         frame.setVisible(true);
 
 
-        File file = new File("water_table.txt");
+        File file = new File("water_table modified.txt");
         Scanner input = new Scanner(file);
 
         while (input.hasNext()) {

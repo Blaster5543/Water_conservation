@@ -1,0 +1,372 @@
+Adelanto City 37,636 129 82
+Alameda County 344,855	114	78
+Alco Water 30,198	144	116
+Alhambra City	85,168	97	72
+Amador Water 23,509	232	148
+Anaheim City	371,317	152	84	0%	0%	n/a	Chart	Map
+Anderson, City	11,147	260	178	0%	0%	n/a	Chart	Map
+Antioch, City 	113,061	120	106	0%	0%	n/a	Chart	Map
+Apple Valley 	62,602	161	112	0%	0%	n/a	Chart	Map
+Arcadia, City 	57,639	231	146	0%	0%	n/a	Chart	Map
+Arcata City 	19,558	88	49	0%	0%	n/a	Chart	Map
+Arroyo Grande	17,963	100	80	0%	0%	n/a	Chart	Map
+Arvin Community	21,947	129	97	0%	0%	n/a	Chart	Map
+Atascadero Mutual	30,331	190	158	0%	0%	n/a	Chart	Map
+Atwater City	31,250	246	185	0%	0%	n/a	Chart	Map
+Azusa, City 	110,044	151	81	0%	0%	n/a	Chart	Map
+Bakersfield City 	162,570	331	241	0%	0%	n/a	Chart	Map
+Bakman Water 	17,003	181	127	0%	0%	n/a	Chart	Map
+Banning, City 	31,221	273	156	0%	0%	n/a	Chart	Map
+Beaumont-Cherry Valley 	68,302	231	143	0%	0%	n/a	Chart	Map
+Bella Vista 	19,150	374	158	0%	0%	n/a	Chart	Map
+Bellflower-Somerset 	46,300	97	81	0%	0%	n/a	Chart	Map
+Benicia, City 	28,086	144	78	0%	0%	n/a	Chart	Map
+Beverly Hills 	43,910	192	134	0%	0%	n/a	Chart	Map
+Big Bear	12,738	73	72	0%	0%	n/a	Chart	Map
+Brawley, City 	26,928	236	152	0%	0%	n/a	Chart	Map
+Brea, City 	42,568	228	116	0%	0%	n/a	Chart	Map
+Brentwood, City 	64,342	194	147	0%	0%	n/a	Chart	Map
+Buena Park, City 	81,998	156	92	0%	0%	n/a	Chart	Map
+Burbank, City	105,451	123	99	0%	0%	n/a	Chart	Map
+Burlingame, City 	32,407	111	80	0%	0%	n/a	Chart	Map
+Calaveras County 23,715	250	238	0%	0%	n/a	Chart	Map
+Calexico, City 	38,000	146	122	0%	0%	n/a	Chart	Map
+ Antelope Valley	3,338	197	176	0%	0%	n/a	Chart	Map
+ Bakersfield City	289,013	215	138	0%	0%	n/a	Chart	Map
+ Bear Gulch	61,123	217	192	0%	0%	n/a	Chart	Map
+ Chico District	112,692	209	149	0%	0%	n/a	Chart	Map
+ Dixon City	10,625	117	107	0%	0%	n/a	Chart	Map
+Dominguez City	143,440	165	68	0%	0%	n/a	Chart	Map
+East LosAngeles	151,678	89	47	0%	0%	n/a	Chart	Map
+ Hermosa Redondo	96,683	96	68	0%	0%	n/a	Chart	Map
+ Kern River Valley	5,591	158	132	0%	0%	n/a	Chart	Map
+ King City	16,088	105	50	0%	0%	n/a	Chart	Map
+ Livermore City	60,248	157	115	0%	0%	n/a	Chart	Map
+Los Altos	70,182	166	124	0%	0%	n/a	Chart	Map
+ Marysville City	12,243	150	98	0%	0%	n/a	Chart	Map
+ Oroville City	11,063	297	74	0%	0%	n/a	Chart	Map
+Palos Verdes	70,856	212	167	0%	0%	n/a	Chart	Map
+ Redwood Valley	3,297	111	101	0%	0%	n/a	Chart	Map
+ Salinas District	123,646	131	92	0%	0%	n/a	Chart	Map
+Selma City	26,423	158	122	0%	0%	n/a	Chart	Map
+ South SanFrancisco	64,123	103	39	0%	0%	n/a	Chart	Map
+Stockton City	175,343	137	82	0%	0%	n/a	Chart	Map
+Visalia City	150,742	227	161	0%	0%	n/a	Chart	Map
+ Westlake City	19,515	269	195	0%	0%	n/a	Chart	Map
+Willows City	7,235	157	115	0%	0%	n/a	Chart	Map
+Los Angeles	101,777	168	129	0%	0%	n/a	Chart	Map
+ Monterey District	91,884	98	63	0%	0%	n/a	Chart	Map
+ Sacramento District	203,851	146	106	0%	0%	n/a	Chart	Map
+San Diego District	94,043	104	64	0%	0%	n/a	Chart	Map
+ Ventura District	63,423	184	120	0%	0%	n/a	Chart	Map
+Camarillo, City 	49,480	134	82	0%	0%	n/a	Chart	Map
+Camrosa Water 	32,700	180	120	0%	0%	n/a	Chart	Map
+Carlsbad District	92,865	155	101	0%	0%	n/a	Chart	Map
+Carmichael District	41,193	242	198	0%	0%	n/a	Chart	Map
+Carpinteria Valley 	15,996	120	91	0%	0%	n/a	Chart	Map
+Casitas Municipal 	17,806	254	167	0%	0%	n/a	Chart	Map
+Ceres, City 49,038	133	97	0%	0%	n/a	Chart	Map
+Cerritos, City 	50,145	142	124	0%	0%	n/a	Chart	Map
+Chino Hills	83,159	152	111	0%	0%	n/a	Chart	Map
+Chino, City 	84,560	183	98	0%	0%	n/a	Chart	Map
+Chowchilla, City 	13,375	244	173	0%	0%	n/a	Chart	Map
+Citrus Heights 	69,964	191	162	0%	0%	n/a	Chart	Map
+ Big Bear 	28,720	67	51	0%	0%	n/a	Chart	Map
+Newman City	12,244	222	141	0%	0%	n/a	Chart	Map
+Cloverdale, City 9,149	119	79	0%	0%	n/a	Chart	Map
+Clovis, City 	127,553	239	207	0%	0%	n/a	Chart	Map
+Coachella Valley 	270,000	346	242	0%	0%	n/a	Chart	Map
+Coachella, City 	45,635	149	115	0%	0%	n/a	Chart	Map
+Coalinga, City 	16,748	232	123	0%	0%	n/a	Chart	Map
+Coastside County	18,839	90	54	0%	0%	n/a	Chart	Map
+Colton, City	54,741	167	84	0%	0%	n/a	Chart	Map
+Compton, City 	78,426	85	51	0%	0%	n/a	Chart	Map
+Contra Costa	197,996	163	132	0%	0%	n/a	Chart	Map
+Corcoran, City 	13,593	333	248	0%	0%	n/a	Chart	Map
+Corona, City 167,409	192	140	0%	0%	n/a	Chart	Map
+Covina, City 	33,300	145	107	0%	0%	n/a	Chart	Map
+Crescent City	19,220	115	50	0%	0%	n/a	Chart	Map
+Crescenta Valley 	32,665	106	92	0%	0%	n/a	Chart	Map
+Crestline Village 	10,030	70	62	0%	0%	n/a	Chart	Map
+Cucamonga Valley 	202,000	208	139	0%	0%	n/a	Chart	Map
+Daly City 	107,488	54	43	0%	0%	n/a	Chart	Map
+Davis, City 	71,698	152	104	0%	0%	n/a	Chart	Map
+Del Oro	8,843	108	87	0%	0%	n/a	Chart	Map
+Delano, City 50,903	171	103	0%	0%	n/a	Chart	Map
+Desert Water 	73,977	429	349	0%	0%	n/a	Chart	Map
+Diablo District	43,357	151	123	0%	0%	n/a	Chart	Map
+Dinuba, City 	26,731	202	152	0%	0%	n/a	Chart	Map
+Downey, City 	111,269	123	92	0%	0%	n/a	Chart	Map
+ San Ramon 	95,072	108	75	0%	0%	n/a	Chart	Map
+East Bay 	1,430,000	122	76	0%	0%	n/a	Chart	Map
+East Niles 	32,000	299	231	0%	0%	n/a	Chart	Map
+East Orange 	3,222	273	265	0%	0%	n/a	Chart	Map
+East Palo 	29,519	53	43	0%	0%	n/a	Chart	Map
+East Valley 	104,000	184	136	0%	0%	n/a	Chart	Map
+Eastern Municipal 	640,423	141	110	0%	0%	n/a	Chart	Map
+El Centro 44,508	169	122	0%	0%	n/a	Chart	Map
+El Dorado 	131,033	307	209	0%	0%	n/a	Chart	Map
+El Monte	22,968	77	47	0%	0%	n/a	Chart	Map
+El Segundo	17,272	330	50	0%	0%	n/a	Chart	Map
+El Toro	47,911	219	99	0%	0%	n/a	Chart	Map
+Elk Grove 	47,006	168	129	0%	0%	n/a	Chart	Map
+Elsinore Valley 	161,565	151	108	0%	0%	n/a	Chart	Map
+Escondido, City 	137,941	140	80	0%	0%	n/a	Chart	Map
+Estero Municipal 	36,556	111	60	0%	0%	n/a	Chart	Map
+Eureka, City 	26,699	90	58	0%	0%	n/a	Chart	Map
+Exeter, City 	11,169	225	162	0%	0%	n/a	Chart	Map
+Fair Oaks 	36,226	325	244	0%	0%	n/a	Chart	Map
+Fairfield, City 	108,691	199	127	0%	0%	n/a	Chart	Map
+Fallbrook Public 	35,237	159	92	0%	0%	n/a	Chart	Map
+Fillmore, City 	15,222	146	121	0%	0%	n/a	Chart	Map
+Folsom, City 	71,494	323	194	0%	0%	n/a	Chart	Map
+Fortuna, City 	12,135	100	89	0%	0%	n/a	Chart	Map
+Fountain Valley 56,747	147	83	0%	0%	n/a	Chart	Map
+Fresno, City 	554,145	245	148	0%	0%	n/a	Chart	Map
+Fruitridge Vista	15,712	198	79	0%	0%	n/a	Chart	Map
+Fullerton, City 	143,617	166	117	0%	0%	n/a	Chart	Map
+Galt, City 	26,536	195	158	0%	0%	n/a	Chart	Map
+Garden Grove	171,949	123	38	0%	0%	n/a	Chart	Map
+Georgetown Divide 	9,203	205	174	0%	0%	n/a	Chart	Map
+Gilroy, City 	58,456	139	90	0%	0%	n/a	Chart	Map
+Glendale, City 	190,616	106	78	0%	0%	n/a	Chart	Map
+Glendora, City 	52,558	186	145	0%	0%	n/a	Chart	Map
+ Artesia City	50,260	82	62	0%	0%	n/a	Chart	Map
+ Barstow City	32,869	183	99	0%	0%	n/a	Chart	Map
+ Bay Point	23,693	75	60	0%	0%	n/a	Chart	Map
+ Bell-Bell Gardens	54,548	76	58	0%	0%	n/a	Chart	Map
+ Claremont City	39,325	215	141	0%	0%	n/a	Chart	Map
+Cordova City	46,834	305	163	0%	0%	n/a	Chart	Map
+ Culver City	37,894	115	63	0%	0%	n/a	Chart	Map
+ Florence Graham	62,941	66	50	0%	0%	n/a	Chart	Map
+ Norwalk City	43,143	90	66	0%	0%	n/a	Chart	Map
+ Orcutt City	33,733	173	140	0%	0%	n/a	Chart	Map
+ Placentia City	49,686	135	90	0%	0%	n/a	Chart	Map
+ Arcadia City	26,526	103	89	0%	0%	n/a	Chart	Map
+San Gabriel	25,808	81	63	0%	0%	n/a	Chart	Map
+ San Dimas	56,336	183	110	0%	0%	n/a	Chart	Map
+Simi Valley	44,950	108	81	0%	0%	n/a	Chart	Map
+West Orange	113,125	117	70	0%	0%	n/a	Chart	Map
+Goleta  District	84,462	153	62	0%	0%	n/a	Chart	Map
+Great Oaks 	108,903	89	69	0%	0%	n/a	Chart	Map
+Greenfield  District	11,757	253	183	0%	0%	n/a	Chart	Map
+Greenfield, City 	18,927	102	78	0%	0%	n/a	Chart	Map
+Groveland  District	3,400	114	107	0%	0%	n/a	Chart	Map
+Hanford, City 	59,338	217	180	0%	0%	n/a	Chart	Map
+Hawthorne, City 	44,728	79	61	0%	0%	n/a	Chart	Map
+Hayward, City 	163,635	107	58	0%	0%	n/a	Chart	Map
+Healdsburg, City 	11,030	143	100	0%	0%	n/a	Chart	Map
+Hemet, City 	33,828	118	84	0%	0%	n/a	Chart	Map
+Hesperia, City 	99,818	143	141	0%	0%	n/a	Chart	Map
+Hi-Desert  District	26,032	109	77	0%	0%	n/a	Chart	Map
+Hillsborough Town 	11,397	248	233	0%	0%	n/a	Chart	Map
+Hollister, City 	23,583	144	96	0%	0%	n/a	Chart	Map
+Humboldt Bay 	602	297	76	0%	0%	n/a	Chart	Map
+Humboldt  District	19,551	89	73	0%	0%	n/a	Chart	Map
+Huntington Beach	201,281	123	86	0%	0%	n/a	Chart	Map
+Indian Wells 	33,476	222	183	0%	0%	n/a	Chart	Map
+Indio, City 	90,804	217	158	0%	0%	n/a	Chart	Map
+Inglewood, City 	82,041	94	75	0%	0%	n/a	Chart	Map
+Irvine Ranch 	466,796	118	69	0%	0%	n/a	Chart	Map
+Joshua Basin 	9,665	130	71	0%	0%	n/a	Chart	Map
+Jurupa District	140,147	196	145	0%	0%	n/a	Chart	Map
+Kerman, City	16,639	204	162	0%	0%	n/a	Chart	Map
+Kingsburg, City 	12,415	299	259	0%	0%	n/a	Chart	Map
+La Habra 	63,118	130	95	0%	0%	n/a	Chart	Map
+La Palma 	15,896	107	75	0%	0%	n/a	Chart	Map
+La Verne 	32,228	208	118	0%	0%	n/a	Chart	Map
+Laguna Beach 	19,117	151	125	0%	0%	n/a	Chart	Map
+Lake Arrowhead	19,096	81	74	0%	0%	n/a	Chart	Map
+Lake Hemet 	54,320	159	145	0%	0%	n/a	Chart	Map
+Lakeside  District	35,500	103	93	0%	0%	n/a	Chart	Map
+Lakewood, City 	61,769	108	86	0%	0%	n/a	Chart	Map
+Lamont Public 	20,009	186	119	0%	0%	n/a	Chart	Map
+Las Virgenes	75,384	195	154	0%	0%	n/a	Chart	Map
+Lathrop, City 	31,331	186	97	0%	0%	n/a	Chart	Map
+Lee Lake 	22,485	151	116	0%	0%	n/a	Chart	Map
+Lemoore, City 	27,235	308	264	0%	0%	n/a	Chart	Map
+Lincoln Avenue	16,126	112	98	0%	0%	n/a	Chart	Map
+Lincoln, City 	51,252	247	185	0%	0%	n/a	Chart	Map
+Linda County 	20,943	181	141	0%	0%	n/a	Chart	Map
+Livermore, City 	38,892	174	97	0%	0%	n/a	Chart	Map
+Livingston, City 	15,052	377	129	0%	0%	n/a	Chart	Map
+Lodi, City 	68,272	222	144	0%	0%	n/a	Chart	Map
+Loma Linda, 	24,791	220	143	0%	0%	n/a	Chart	Map
+Lomita, City	20,256	86	82	0%	0%	n/a	Chart	Map
+Lompoc, City 	40,415	62	45	0%	0%	n/a	Chart	Map
+Long Beach	460,682	95	67	0%	0%	n/a	Chart	Map
+Los Angeles	4,251,951	116	76	0%	0%	n/a	Chart	Map
+Los Banos	46,639	202	131	0%	0%	n/a	Chart	Map
+Lynwood	66,967	64	36	0%	0%	n/a	Chart	Map
+Madera	66,419	154	108	0%	0%	n/a	Chart	Map
+Mammoth Community 	16,739	125	75	0%	0%	n/a	Chart	Map
+Manhattan Beach	35,996	113	79	0%	0%	n/a	Chart	Map
+Manteca, City 	89,025	179	155	0%	0%	n/a	Chart	Map
+Marin Municipal	191,082	120	85	0%	0%	n/a	Chart	Map
+Marina Coast	36,043	100	60	0%	0%	n/a	Chart	Map
+Martinez, City	30,085	171	118	0%	0%	n/a	Chart	Map
+McKinleyville  District	16,900	89	63	0%	0%	n/a	Chart	Map
+Menlo Park	20,319	142	60	0%	0%	n/a	Chart	Map
+Merced, City 	93,058	248	166	0%	0%	n/a	Chart	Map
+Mesa Water 	110,000	100	67	0%	0%	n/a	Chart	Map
+Mid-Peninsula District	27,560	94	68	0%	0%	n/a	Chart	Map
+Millbrae, City 	21,532	76	53	0%	0%	n/a	Chart	Map
+Milpitas, City 	77,961	111	50	0%	0%	n/a	Chart	Map
+Mission Springs 	44,108	176	115	0%	0%	n/a	Chart	Map
+Modesto, City 	236,438	243	142	0%	0%	n/a	Chart	Map
+Monte Vista 	56,839	140	100	0%	0%	n/a	Chart	Map
+Montebello District	26,554	104	86	0%	0%	n/a	Chart	Map
+Montecito  District	11,865	392	278	0%	0%	n/a	Chart	Map
+Monterey Park	62,183	105	74	0%	0%	n/a	Chart	Map
+Morgan Hill	46,451	162	101	0%	0%	n/a	Chart	Map
+Moulton Niguel	170,236	139	101	0%	0%	n/a	Chart	Map
+Mountain House 	27,926	225	124	0%	0%	n/a	Chart	Map
+Mountain View	81,764	117	64	0%	0%	n/a	Chart	Map
+Myoma Dunes 	8,948	360	315	0%	0%	n/a	Chart	Map
+Napa, City 	87,067	143	86	0%	0%	n/a	Chart	Map
+Nevada Irrigation 	44,761	238	196	0%	0%	n/a	Chart	Map
+Newport Beach	68,572	205	119	0%	0%	n/a	Chart	Map
+Nipomo Community 	13,773	138	115	0%	0%	n/a	Chart	Map
+North Coast 	38,640	54	41	0%	0%	n/a	Chart	Map
+North Marin 	61,693	110	86	0%	0%	n/a	Chart	Map
+North Tahoe 	7,500	182	154	0%	0%	n/a	Chart	Map
+Oceanside, City 	178,021	140	83	0%	0%	n/a	Chart	Map
+Oildale  Company	39,756	263	198	0%	0%	n/a	Chart	Map
+Olivehurst District	27,019	178	159	0%	0%	n/a	Chart	Map
+Olivenhain  District	87,084	207	134	0%	0%	n/a	Chart	Map
+Ontario, City 	182,871	178	100	0%	0%	n/a	Chart	Map
+Orange Vale	16,815	274	219	0%	0%	n/a	Chart	Map
+Orange, City	140,094	113	68	0%	0%	n/a	Chart	Map
+Orchard Dale 	25,000	72	56	0%	0%	n/a	Chart	Map
+Otay  District	227,957	130	83	0%	0%	n/a	Chart	Map
+Oxnard, City 	199,852	118	54	0%	0%	n/a	Chart	Map
+Padre Dam 	92,045	110	102	0%	0%	n/a	Chart	Map
+Palmdale  District	118,291	170	136	0%	0%	n/a	Chart	Map
+Palo Alto 67,973	157	103	0%	0%	n/a	Chart	Map
+Paradise  District	8,000	602	58	0%	0%	n/a	Chart	Map
+Paramount, City 	55,200	88	64	0%	0%	n/a	Chart	Map
+Park Water 	120,937	75	50	0%	0%	n/a	Chart	Map
+Pasadena, City 	170,950	156	93	0%	0%	n/a	Chart	Map
+Paso Robles	31,221	216	113	0%	0%	n/a	Chart	Map
+Patterson, City 	24,370	169	108	0%	0%	n/a	Chart	Map
+Perris, City 	9,000	235	129	0%	0%	n/a	Chart	Map
+Petaluma, City 	61,304	97	66	0%	0%	n/a	Chart	Map
+Phelan Pinon 	23,585	123	92	0%	0%	n/a	Chart	Map
+Pico Rivera, City 	40,605	102	72	0%	0%	n/a	Chart	Map
+Pico Water 22,051	116	76	0%	0%	n/a	Chart	Map
+Pinedale County 	16,735	161	152	0%	0%	n/a	Chart	Map
+Pittsburg, City 	75,156	118	79	0%	0%	n/a	Chart	Map
+Placer County 	112,215	313	200	0%	0%	n/a	Chart	Map
+Pleasanton, City 	84,317	173	101	0%	0%	n/a	Chart	Map
+Pomona, City 	151,713	113	81	0%	0%	n/a	Chart	Map
+Port Hueneme, City 	21,555	79	57	0%	0%	n/a	Chart	Map
+Porterville, City 	65,702	199	138	0%	0%	n/a	Chart	Map
+Poway, City 	49,062	199	135	0%	0%	n/a	Chart	Map
+Quartz Hill	20,352	231	226	0%	0%	n/a	Chart	Map
+Rainbow Municipal 	23,536	295	71	0%	0%	n/a	Chart	Map
+Ramona Municipal 	35,135	141	96	0%	0%	n/a	Chart	Map
+Rancho California 	152,449	273	248	0%	0%	n/a	Chart	Map
+Red Bluff, City 	14,076	274	159	0%	0%	n/a	Chart	Map
+Redding, City 	88,235	304	219	0%	0%	n/a	Chart	Map
+Redlands, City 	78,052	311	229	0%	0%	n/a	Chart	Map
+Redwood City	90,928	93	66	0%	0%	n/a	Chart	Map
+Reedley, City 	25,917	231	87	0%	0%	n/a	Chart	Map
+Rialto, City 	54,453	174	129	0%	0%	n/a	Chart	Map
+Rincon DelDiablo 	32,019	158	118	0%	0%	n/a	Chart	Map
+Rio Linda 	15,345	180	151	0%	0%	n/a	Chart	Map
+Rio Vista	10,472	236	165	0%	0%	n/a	Chart	Map
+Ripon, City 16,613	268	211	0%	0%	n/a	Chart	Map
+Riverbank, City 	24,623	172	155	0%	0%	n/a	Chart	Map
+Riverside Highland 	21,370	136	108	0%	0%	n/a	Chart	Map
+Riverside, City 	300,368	220	127	0%	0%	n/a	Chart	Map
+Rohnert Park	42,484	97	63	0%	0%	n/a	Chart	Map
+Rosamond Community 17,700	161	140	0%	0%	n/a	Chart	Map
+Roseville, City 	143,113	239	152	0%	0%	n/a	Chart	Map
+Rowland Water 	59,283	148	75	0%	0%	n/a	Chart	Map
+Rubidoux Community 	36,827	135	98	0%	0%	n/a	Chart	Map
+Rubio Canyon	9,600	198	182	0%	0%	n/a	Chart	Map
+Sacramento County 	202,259	227	157	0%	0%	n/a	Chart	Map
+Sacramento Suburban 	194,444	184	116	0%	0%	n/a	Chart	Map
+Sacramento, City 	518,037	182	111	0%	0%	n/a	Chart	Map
+ Bernardino, City 	213,452	182	115	0%	0%	n/a	Chart	Map
+ Bruno, City 	44,936	49	36	0%	0%	n/a	Chart	Map
+ Buenaventura, City 	113,478	116	74	0%	0%	n/a	Chart	Map
+ Clemente, City 	51,065	143	101	0%	0%	n/a	Chart	Map
+ Diego, City 	1,411,034	118	63	0%	0%	n/a	Chart	Map
+ Dieguito 	39,823	137	113	0%	0%	n/a	Chart	Map
+ Fernando, City 	24,322	102	76	0%	0%	n/a	Chart	Map
+ Francisco 	899,732	72	44	0%	0%	n/a	Chart	Map
+ Gabriel	45,000	102	77	0%	0%	n/a	Chart	Map
+San Jose	1,042,326	103	57	0%	0%	n/a	Chart	Map
+ Juan-Capistrano San	38,897	197	111	0%	0%	n/a	Chart	Map
+Lorenzo 	26,190	69	60	0%	0%	n/a	Chart	Map
+Luis Obispo	47,653	98	57	0%	0%	n/a	Chart	Map
+ Ana Santa	332,005	94	63	0%	0%	n/a	Chart	Map
+ Barbara Santa	98,420	107	71	0%	0%	n/a	Chart	Map
+ Clara	 Santa 130,746	139	86	0%	0%	n/a	Chart	Map
+ Clarita Santa 295,639	211	123	0%	0%	n/a	Chart	Map
+ Cruz	Santa 87,957	86	46	0%	0%	n/a	Chart	Map
+ Fe Santa	19,839	530	445	0%	0%	n/a	Chart	Map
+ Margarita Santa 	164,492	149	110	0%	0%	n/a	Chart	Map
+ Maria Santa	109,910	102	64	0%	0%	n/a	Chart	Map
+ Monica Santa	92,408	115	79	0%	0%	n/a	Chart	Map
+ Paula Santa	29,558	142	105	0%	0%	n/a	Chart	Map
+ Rosa Santa	175,755	98	70	0%	0%	n/a	Chart	Map
+Scotts Valley 	10,789	97	64	0%	0%	n/a	Chart	Map
+Seal Beach	25,561	115	84	0%	0%	n/a	Chart	Map
+Shafter City	20,500	259	147	0%	0%	n/a	Chart	Map
+Shasta Lake	10,657	194	142	0%	0%	n/a	Chart	Map
+Sierra Madre	11,100	198	187	0%	0%	n/a	Chart	Map
+Signal Hill 	11,712	148	73	0%	0%	n/a	Chart	Map
+Soledad City	17,309	137	91	0%	0%	n/a	Chart	Map
+Sonoma City	11,725	173	126	0%	0%	n/a	Chart	Map
+Soquel Creek	40,659	74	52	0%	0%	n/a	Chart	Map
+South Coast 	34,635	155	110	0%	0%	n/a	Chart	Map
+South Feather 16,770	384	342	0%	0%	n/a	Chart	Map
+South Gate 	105	64	0%	0%	n/a	Chart	Map
+South Tahoe	33,120	175	81	0%	0%	n/a	Chart	Map
+Stockton City	184,402	185	109	0%	0%	n/a	Chart	Map
+La Mirada	122,838	158	102	0%	0%	n/a	Chart	Map
+Sunnyslope County 	62,970	110	98	0%	0%	n/a	Chart	Map
+Sunnyvale City 	156,234	121	74	0%	0%	n/a	Chart	Map
+Susanville City 7,911	451	331	0%	0%	n/a	Chart	Map
+Sweetwater Authority	189,371	88	59	0%	0%	n/a	Chart	Map
+Sweetwater Springs	7,703	81	40	0%	0%	n/a	Chart	Map
+Tahoe City 	10,217	165	132	0%	0%	n/a	Chart	Map
+Tehachapi City 	9,094	245	157	0%	0%	n/a	Chart	Map
+Thermalito Water 	10,355	229	180	0%	0%	n/a	Chart	Map
+Thousand Oaks	53,157	135	108	0%	0%	n/a	Chart	Map
+Trabuco Canyon 	12,921	185	142	0%	0%	n/a	Chart	Map
+Tracy City 	98,601	238	155	0%	0%	n/a	Chart	Map
+Triunfo Sanitation / Oak Park Water Service	13,898	104	93	0%	0%	n/a	Chart	Map
+Truckee-Donner District	34,385	144	113	0%	0%	n/a	Chart	Map
+Tulare City 69,162	254	153	0%	0%	n/a	Chart	Map
+Tuolumne District	34,278	142	84	0%	0%	n/a	Chart	Map
+Turlock City 	74,820	265	141	0%	0%	n/a	Chart	Map
+Tustin City	66,600	158	128	0%	0%	n/a	Chart	Map
+Twentynine Palms 	18,795	125	107	0%	0%	n/a	Chart	Map
+Upland City 	78,383	193	131	0%	0%	n/a	Chart	Map
+Vacaville City	98,742	187	141	0%	0%	n/a	Chart	Map
+Vallecitos District	110,997	138	87	0%	0%	n/a	Chart	Map
+Vallejo City 	127,686	118	69	0%	0%	n/a	Chart	Map
+Valley County Water District	92,714	90	57	0%	0%	n/a	Chart	Map
+Moon Water 	23,077	100	87	0%	0%	n/a	Chart	Map
+Valley Water 	10,070	323	282	0%	0%	n/a	Chart	Map
+Vaughn Water 	33,995	437	419	0%	0%	n/a	Chart	Map
+Ventura County Waterworks District No. 8	124,738	149	102	0%	0%	n/a	Chart	Map
+Vernon City 	112	51,297	153	0%	0%	n/a	Chart	Map
+Victorville 	130,839	168	114	0%	0%	n/a	Chart	Map
+Vista Irrigation 	132,838	134	86	0%	0%	n/a	Chart	Map
+Walnut Valley 	100,461	153	127	0%	0%	n/a	Chart	Map
+Watsonville City 	65,231	94	63	0%	0%	n/a	Chart	Map
+West Kern 	22,113	697	195	0%	0%	n/a	Chart	Map
+West Valley 	97,893	210	137	0%	0%	n/a	Chart	Map
+Westborough  District	13,486	60	45	0%	0%	n/a	Chart	Map
+Riverside	101,585	253	152	0%	0%	n/a	Chart	Map
+Westminster City 	96,179	110	77	0%	0%	n/a	Chart	Map
+Whittier City 	49,954	136	98	0%	0%	n/a	Chart	Map
+Windsor Town	28,397	106	69	0%	0%	n/a	Chart	Map
+Woodland City 	60,978	165	110	0%	0%	n/a	Chart	Map
+Yorba District	80,540	247	194	0%	0%	n/a	Chart	Map
+Yreka City 	7,746	343	86	0%	0%	n/a	Chart	Map
+Yuba City 	71,922	193	127	0%	0%	n/a	Chart	Map

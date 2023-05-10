@@ -250,6 +250,7 @@ void response(double gallons, const int HOUSE_WATER_PER_YEAR, const int EFFICIEN
     cout << "Combining with our survey, we have calculated how much water you used ";
     cout << "(This is how many gallons used per year assuming you use them everyday)!" << endl;
     cout << "You use " << gallons << " gallons per year!" << endl;
+    //Gives a response based on the const int
     if (gallons > HOUSE_WATER_PER_YEAR) {
         cout << "You use more water than the average American household, consider cutting it down!" << endl;
     } else if (gallons <= HOUSE_WATER_PER_YEAR && gallons > EFFICIENT_WATER_PER_YEAR) {
@@ -264,7 +265,7 @@ void response(double gallons, const int HOUSE_WATER_PER_YEAR, const int EFFICIEN
     cout << "This is how much money you're spending on water per year! ";
     cout << "$" << fixed << setprecision(2) << gallons * COST_PER_GALLON << endl;
 
-    //Prints out the amount of money 
+    //Prints out the amount of money they could save
     if (gallons > EFFICIENT_WATER_PER_YEAR) {
         cout << endl;
         cout << "And this is how much money you could save! ";
@@ -287,6 +288,10 @@ void print_general_tips(std::unordered_map <int, std::unordered_set<std::string>
     }
 }
 
+//Dylan Chiu
+/**
+ * Prints out the tips for the input survey
+*/
 std::string print_input_tips(double answer, int pos) {
     std::ifstream recommend_gal("input_recommend_use.txt");
     std::ifstream tips("recommend_input.txt");
@@ -324,6 +329,7 @@ void survey_input() {
     int pos = 0;
     Queue tips_to_print;
 
+    //Gets the input from the user along with the question and tips
     cout << "Here are the questions!" << endl;
     cout << "(Input 0 if you do not use/have, input -1 if you aren't sure (This assume standard or average))" << endl;
     while (getline(questions, line)) {
@@ -336,8 +342,9 @@ void survey_input() {
         pos++;
     }
 
-    response(total, HOUSE_WATER_PER_YEAR, EFFICIENT_WATER_PER_YEAR, COST_PER_GALLON);
+    response(total, HOUSE_WATER_PER_YEAR, EFFICIENT_WATER_PER_YEAR, COST_PER_GALLON); //Responds to the user's water usage
 
+    //Prints out three tips
     std::cout << "We also have some tips for you!" << std::endl;
     for(int i = 0; i < tips_to_print.size(); i++) {
         if (i == 2) {
@@ -481,7 +488,7 @@ void print_city_info(City city) {
 void print_city_info(City temp, City compare)
 {
     using namespace std;
-    cout << " " << setw(10) << temp.city_name << " " << setw(10) << compare.city_name << endl;
+    cout << " " << setw(10) << temp.city_name << " " << setw(50) << compare.city_name << endl;
     cout << "Population: " << temp.population  << setw(50) << compare.population << endl;
     cout << "Gallons per Capita: " << temp.gallons_per_capita << setw(40) << compare.gallons_per_capita << endl;
     cout << "Gallons per Resident: " << temp.gallons_per_resident << setw(39) << compare.gallons_per_resident << endl;
@@ -533,6 +540,7 @@ void quicksort(std::vector<City>& city_list, int from, int to)
 //Edit3: 5/1/23
 void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<City>& city_info) {
     while (true) {
+        const int CITIES_PER_LINE = 5;
         std::string name = "";
         std::string choice;
         std::cout << "Do you want to see the statistics of a county, compare mutiply counties, or a sorted list of the most wasteful counties? ";
@@ -540,9 +548,13 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
         std::cin >> choice;
         if (choice == "1") {
             std::cin.ignore(1,'\n');
-            std::cout << "What county do you want to view? (Type in the full name exactly as it shows) ";
-            for (int i = 0; i < city_info.size(); i++) {
-                std::cout << city_info[i].city_name << std::endl;
+            std::cout << "What county do you want to view? (Type in the full name exactly as it shows)" << std::endl;
+            for (int i = 0; i < city_info.size() - 1; i++) {
+                for (int j = 0; j < CITIES_PER_LINE; j++) {
+                    std::cout << city_info[i].city_name << " | ";
+                    i++;
+                }
+                std::cout << std::endl;
             }
             getline(std::cin, name);
             while (!dataset.find_city(name)) {
@@ -550,6 +562,7 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
                 getline(std::cin, name);
             }
             print_city_info(dataset.get_city(name));
+            timer(dataset.get_city(name), WATER_RESEVOIR_LEVEL);
         } else if (choice == "2") {
                 std::string compare_name = "";
                 bool done = false;
@@ -569,7 +582,6 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
 
                 while(cities_to_be_compared.size() > 0) {
                     print_city_info(dataset.get_city(cities_to_be_compared.front()), dataset.get_city(compare_name));
-                    timer(dataset.get_city(cities_to_be_compared.front()), WATER_RESEVOIR_LEVEL);
                     cities_to_be_compared.remove();
                 }
 

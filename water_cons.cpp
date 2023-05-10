@@ -588,7 +588,7 @@ void statistics(HashTable& dataset, const int WATER_RESEVOIR_LEVEL, std::vector<
         } else if (choice == "3") {
             quicksort(city_info, 0, city_info.size());
             std::cout << "The top 10 most wasteful cities are: \n";
-            for (int i = city_info.size() - 1; i > city_info.size() - 10; i--)
+            for (int i = 0; i < 10; i++)
             {
                 std::cout << city_info[i].city_name << ":\nGallons per Capita: " << city_info[i].gallons_per_capita << "\n\n";
             }

@@ -8,3 +8,4 @@ Anderson, City of	11,147	260	178	0%	0%	n/a	Chart	Map
 Antioch, City of	113,061	120	106	0%	0%	n/a	Chart	Map
 Apple Valley Ranchos Water Company	62,602	161	112	0%	0%	n/a	Chart	Map
 Arcadia, City of	57,639	231	146	0%	0%	n/a	Chart	Map
+Full data: California Urban Water Use Data, Pacific Institute, https://pacinst.org/gpcd/table/. 
